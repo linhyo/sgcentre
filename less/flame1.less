@@ -1,0 +1,54 @@
+.flame1{
+  .title-flame1{
+    font-size: 44px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+  }
+
+  .sub-title-flame1{
+    font-size: 44px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 15px;
+    &:after{
+      height: 3px;
+      width: 100px;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      background: white;
+      left: 0;
+    }
+  }
+
+  .description-flame1{
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+  }
+
+
+  .view-gallery {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 8px 20px;
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fed8a1;
+    .transition();
+    .border-radius(8px);
+    &:focus, &:hover {
+      color: #2c2c2c;
+      background-color: #ffd899;
+    }
+  }
+}

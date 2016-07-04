@@ -312,3 +312,10 @@
   width: @width;
   height: @height;
 }
+
+.prefixed(@property, @value) {
+  -webkit-@{property}: @value;
+  -khtml-@{property}: @value;
+  -moz-@{property}: @value;
+  @{property}: @value;
+}
