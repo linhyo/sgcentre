@@ -306,19 +306,19 @@ body {
     -ms-transition-timing-function: ease-in-out;
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out; }
-  .seq .seq-content > div.flame1 {
+  .seq .seq-content > div.frame1 {
     padding: 0 0 120px 85px;
     /* Reset the white-space so content wraps as expected */
     white-space: normal; }
-  .seq .seq-content > div.flame2 {
+  .seq .seq-content > div.frame2 {
     padding: 0 0 0 125px;
     /* Reset the white-space so content wraps as expected */
     white-space: normal; }
-  .seq .seq-content > div.flame3 {
+  .seq .seq-content > div.frame3 {
     padding: 0 0 0 125px;
     /* Reset the white-space so content wraps as expected */
     white-space: normal; }
-  .seq .seq-content > div.flame4 {
+  .seq .seq-content > div.frame4 {
     padding: 0 0 0 80px;
     /* Reset the white-space so content wraps as expected */
     white-space: normal; }

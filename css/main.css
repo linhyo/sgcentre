@@ -505,13 +505,13 @@ p {
 .countdown ul#countdown li:last-child .number:after {
   content: '';
 }
-.flame1 .title-flame1 {
+.frame1 .title-frame1 {
   font-size: 44px;
   color: white;
   font-weight: 300;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
-.flame1 .sub-title-flame1 {
+.frame1 .sub-title-frame1 {
   font-size: 44px;
   color: white;
   text-transform: uppercase;
@@ -521,7 +521,7 @@ p {
   position: relative;
   margin-bottom: 15px;
 }
-.flame1 .sub-title-flame1:after {
+.frame1 .sub-title-frame1:after {
   height: 3px;
   width: 100px;
   content: '';
@@ -530,13 +530,13 @@ p {
   background: white;
   left: 0;
 }
-.flame1 .description-flame1 {
+.frame1 .description-frame1 {
   font-size: 25px;
   color: white;
   font-weight: 300;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
 }
-.flame1 .view-gallery {
+.frame1 .view-gallery {
   cursor: pointer;
   display: inline-block;
   margin-top: 1em;
@@ -559,24 +559,24 @@ p {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.flame1 .view-gallery:focus,
-.flame1 .view-gallery:hover {
+.frame1 .view-gallery:focus,
+.frame1 .view-gallery:hover {
   color: #2c2c2c;
   background-color: #ffd899;
 }
-.flame4 .title-flame4 {
+.frame4 .title-frame4 {
   display: block;
   font-size: 35px;
   color: #00b1b7;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.flame4 .flame4-content {
+.frame4 .frame4-content {
   width: 315px;
   color: #5c5c5c;
   display: block;
 }
-.flame4 .btn-flame4 {
+.frame4 .btn-frame4 {
   margin-top: 15px;
   font-size: 16px;
   width: 280px;
@@ -594,7 +594,7 @@ p {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.flame4 .btn-flame4:focus,
-.flame4 .btn-flame4:hover {
+.frame4 .btn-frame4:focus,
+.frame4 .btn-frame4:hover {
   background-color: #00c5cc;
 }
