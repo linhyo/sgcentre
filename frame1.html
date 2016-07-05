@@ -38,7 +38,7 @@
   </div>
 
   <div class="seq-nav">
-    <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+    <ul role="navigation" aria-label="Pagination" class="pagination-nav seq-pagination">
       <li>
         <a href="#step1" rel="step1" title="Go to slide 1"><span class="numeral"></span></a>
       </li>
@@ -56,7 +56,7 @@
       </li>
     </ul>
 
-    <button class="seq-next seq-swipe" type="button" aria-label="Next">
+    <button class="btn-next seq-next seq-swipe" type="button" aria-label="Next">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.5" viewBox="30.4 23.7 20 21.5"
            enable-background="new 30.4 23.7 20 21.5" role="img" aria-labelledby="title-swipe-icon"><title
         id="title-swipe-icon">Swipe Icon</title>
@@ -96,8 +96,8 @@
             <a class="view-gallery seq-next" href="#">Sưu tập mảnh ghép</a>
 
             <!--<ul role="navigation" aria-label="Pagination" class="seq-pagination">-->
-              <!--<li>-->
-              <!--</li>-->
+            <!--<li>-->
+            <!--</li>-->
             <!--</ul>-->
           </div>
         </div>
@@ -129,6 +129,29 @@
             <img src="images/frame/bg-frame3.jpg" alt="Khám phá mảnh ghép"/>
           </div>
         </div>
+        <div data-seq class="seq-content seq-full seq-valign step3-bg" style="background-image: url(images/frame/bg-frame3-1.png)">
+          <div class="frame3">
+            <a href="#" class="logo-event"><img src="images/event/logo-event.png" alt=""/></a>
+
+            <div class="carousel">
+              <a href="#"><img src="images/event/event1.png" alt="Image 1" /></a>
+              <a href="#"><img src="images/event/event1.png" alt="Image 1" /></a>
+              <a href="#"><img src="images/event/event1.png" alt="Image 1" /></a>
+              <a href="#"><img src="images/event/event1.png" alt="Image 1" /></a>
+              <a href="#"><img src="images/event/event1.png" alt="Image 1" /></a>
+              <a href="#"><img src="images/event/event1.png" alt="Image 1" /></a>
+              <a href="#"><img src="images/event/event1.png" alt="Image 1" /></a>
+            </div>
+
+            <div class="promotion-block">
+              <i class="icon-device"></i>
+              <h2 class="title-frame3">Khám phá mảnh ghép hôm nay</h2>
+              <h3 class="description-frame3">
+                Cơ hội để nhận voucher 1.000.000 VND!
+              </h3>
+            </div>
+          </div>
+        </div>
       </li>
       <li id="step4" class="step4">
         <div data-seq class="seq-feature seq-full ">
@@ -146,8 +169,18 @@
               trung tâm thương maik Saigon Center vào ngày 14/8/2016 cùng với 1 người bạn của mình. Nhiều thử thách bất
               ngờ cùng các phần quà hấp dẫn chờ đón các bạn!</p>
 
-            <a class="btn-frame4" href="#">Sưu tập mảnh ghép</a>
-            <a class="btn-frame4" href="#">Nội dung chương trình</a>
+            <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+              <li>
+                <a class="btn-frame4" href="#">Sưu tập mảnh ghép</a>
+              </li>
+              <li>
+                <a class="btn-frame4" href="#">Nội dung chương trình</a>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+            </ul>
           </div>
         </div>
       </li>
@@ -186,6 +219,7 @@
 <script src="js/lib/sequence.min.js"></script>
 <script src="js/lib/sequence-theme.two-up.min.js"></script>
 <script src="js/countdown.js"></script>
+<script src="js/carousel.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

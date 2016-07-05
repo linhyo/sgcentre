@@ -564,6 +564,98 @@ p {
   color: #2c2c2c;
   background-color: #ffd899;
 }
+.step3-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.frame3 .logo-event {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -163px;
+}
+.frame3 .carousel {
+  -webkit-transform: translateY(0px) translateZ(0px);
+  -moz-transform: translateY(0px) translateZ(0px);
+  -o-transform: translateY(0px) translateZ(0px);
+  -ms-transform: translateY(0px) translateZ(0px);
+  transform: translateY(0px) translateZ(0px);
+  width: 820px;
+  position: absolute !important;
+  margin-left: -420px;
+  left: 50%;
+  display: block;
+}
+.frame3 .carousel img {
+  display: block;
+  /* hide images until carousel prepares them */
+  cursor: pointer;
+  /* not needed if you wrap carousel items in links */
+}
+.frame3 .promotion-block {
+  display: block;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding-top: 50px;
+}
+.frame3 .promotion-block i.icon-device {
+  background: url("../images/event/icon-device.png") no-repeat center;
+  width: 22px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  margin-left: -11px;
+}
+.frame3 .promotion-block i.icon-device:after {
+  content: '';
+  height: 1px;
+  width: 90px;
+  position: absolute;
+  top: 18px;
+  left: -100px;
+  background-color: #525252;
+}
+.frame3 .promotion-block i.icon-device:before {
+  content: '';
+  height: 1px;
+  width: 90px;
+  position: absolute;
+  top: 18px;
+  right: -100px;
+  background-color: #525252;
+}
+.frame3 .promotion-block .title-frame3 {
+  font-size: 25px;
+  color: #525252;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.frame3 .promotion-block .title-frame3:after {
+  position: absolute;
+  content: '';
+  width: 210px;
+  height: 1px;
+  background-color: #525252;
+  bottom: 0;
+  left: 50%;
+  margin-left: -105px;
+}
+.frame3 .promotion-block .description-frame3 {
+  font-size: 18px;
+  color: #525252;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: 300;
+}
 .frame4 .title-frame4 {
   display: block;
   font-size: 35px;

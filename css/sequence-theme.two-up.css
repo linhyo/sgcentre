@@ -116,7 +116,7 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none; }
-  .seq .seq-pagination,
+  .seq .pagination,
   .seq .seq-swipe {
     display: inline-block;
     vertical-align: top; }
@@ -125,12 +125,12 @@ body {
     .seq .seq-swipe path {
       /* Color of the swipe icon */
       fill: white; }
-  .seq .seq-pagination {
+  .seq .pagination-nav {
     margin: 0;
     padding: 0; }
-    .seq .seq-pagination a {
+    .seq .pagination-nav a {
       text-decoration: none; }
-    .seq .seq-pagination li {
+    .seq .pagination-nav li {
       /* Make the pagination links circles */
       display: inline-block;
       vertical-align: top;
@@ -153,7 +153,7 @@ body {
       -ms-transition-property: background;
       -o-transition-property: background;
       transition-property: background; }
-      .seq .seq-pagination li .numeral {
+      .seq .pagination-nav li .numeral {
         /* Numbers shown in pagination */
         font-size: .6875em;
         font-weight: 700;
@@ -171,11 +171,11 @@ body {
         -o-transition-property: color;
         transition-property: color;
         -moz-osx-font-smoothing: grayscale; }
-      .seq .seq-pagination li:focus, .seq .seq-pagination li:hover {
+      .seq .pagination-nav li:focus, .seq .pagination-nav li:hover {
         background: white; }
-        .seq .seq-pagination li:focus .numeral, .seq .seq-pagination li:hover .numeral {
+        .seq .pagination-nav li:focus .numeral, .seq .pagination-nav li:hover .numeral {
           color: black; }
-      .seq .seq-pagination li:before {
+      .seq .pagination-nav li:before {
         /* Circle around pagination. Animated when hovered over */
         pointer-events: none;
         content: "";
@@ -207,9 +207,9 @@ body {
         -ms-transition-property: transform, opacity;
         -o-transition-property: transform, opacity;
         transition-property: transform, opacity; }
-      .seq .seq-pagination li.seq-current {
+      .seq .pagination-nav li.seq-current {
         cursor: auto; }
-      .seq .seq-pagination li.seq-current:before {
+      .seq .pagination-nav li.seq-current:before {
         /* Animate the circle around the pagination link */
         opacity: 1;
         -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
@@ -217,7 +217,7 @@ body {
         -ms-transform: translateX(-50%) translateY(-50%) scale(1);
         -o-transform: translateX(-50%) translateY(-50%) scale(1);
         transform: translateX(-50%) translateY(-50%) scale(1); }
-      .seq .seq-pagination li:after {
+      .seq .pagination-nav li:after {
         /* Lines between dots */
         pointer-events: none;
         position: absolute;
@@ -231,11 +231,11 @@ body {
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
         transform: translateY(-50%); }
-      .seq .seq-pagination li:last-child {
+      .seq .pagination-nav li:last-child {
         /* Remove the line after the last dot as it's not needed */
         margin-bottom: 0;
         margin-right: 0; }
-        .seq .seq-pagination li:last-child:after {
+        .seq .pagination-nav li:last-child:after {
           content: none; }
   .seq .seq-tooltip {
     /* Turn off tooltips for small layout */
@@ -310,6 +310,9 @@ body {
     padding: 0 0 120px 85px;
     /* Reset the white-space so content wraps as expected */
     white-space: normal; }
+    @media (max-width: 360px) {
+      .seq .seq-content > div.frame1 {
+        padding: 15px; } }
   .seq .seq-content > div.frame2 {
     padding: 0 0 0 125px;
     /* Reset the white-space so content wraps as expected */
@@ -405,6 +408,11 @@ body {
     -ms-transform: translateY(0) translateZ(0);
     -o-transform: translateY(0) translateZ(0);
     transform: translateY(0) translateZ(0); } }
+.btn-next {
+  border: 0;
+  background-color: transparent;
+  display: block; }
+
 @media only screen and (min-width: 769px) {
   html,
   body {
@@ -498,11 +506,11 @@ body {
       -ms-transform: translateY(-50%) translateZ(100px);
       -o-transform: translateY(-50%) translateZ(100px);
       transform: translateY(-50%) translateZ(100px); }
-    .seq .seq-pagination li {
+    .seq .pagination-nav li {
       display: block;
       margin: 0 0 1em;
       font-size: 16px; }
-      .seq .seq-pagination li:hover .seq-tooltip {
+      .seq .pagination-nav li:hover .seq-tooltip {
         opacity: 1;
         visibility: visible;
         /* Move the tooltip up as it appears */
@@ -511,7 +519,7 @@ body {
         -ms-transform: translateY(-50%) translateZ(0);
         -o-transform: translateY(-50%) translateZ(0);
         transform: translateY(-50%) translateZ(0); }
-      .seq .seq-pagination li:after {
+      .seq .pagination-nav li:after {
         /* Lines between dots */
         left: 50%;
         top: 100%;
