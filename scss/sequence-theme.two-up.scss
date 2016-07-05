@@ -316,37 +316,6 @@ body {
     @include prefixed(transition-timing-function, "ease-in-out");
   }
 
-  .seq-content > div.frame1 {
-    padding: 0 0 120px 85px;
-    @media (max-width: 360px) {
-      padding: 15px;
-    }
-
-    /* Reset the white-space so content wraps as expected */
-    white-space: normal;
-  }
-
-  .seq-content > div.frame2 {
-    padding: 0 0 0 125px;
-
-    /* Reset the white-space so content wraps as expected */
-    white-space: normal;
-  }
-
-  .seq-content > div.frame3 {
-    padding: 0 0 0 125px;
-
-    /* Reset the white-space so content wraps as expected */
-    white-space: normal;
-  }
-
-  .seq-content > div.frame4 {
-    padding: 0 0 0 80px;
-
-    /* Reset the white-space so content wraps as expected */
-    white-space: normal;
-  }
-
   .seq-button {
     display: inline-block;
     margin-top: 1em;

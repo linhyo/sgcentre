@@ -505,6 +505,16 @@ p {
 .countdown ul#countdown li:last-child .number:after {
   content: '';
 }
+.frame1 {
+  padding: 0 0 120px 85px;
+  /* Reset the white-space so content wraps as expected */
+  white-space: normal;
+}
+@media (max-width: 360px) {
+  .frame1 {
+    padding: 15px;
+  }
+}
 .frame1 .title-frame1 {
   font-size: 44px;
   color: white;
@@ -564,10 +574,20 @@ p {
   color: #2c2c2c;
   background-color: #ffd899;
 }
+.frame2 {
+  padding: 0 0 0 125px;
+  /* Reset the white-space so content wraps as expected */
+  white-space: normal;
+}
 .step3-bg {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.frame3 {
+  padding: 0;
+  /* Reset the white-space so content wraps as expected */
+  white-space: normal;
 }
 .frame3 .logo-event {
   display: block;
@@ -655,6 +675,77 @@ p {
   padding-bottom: 15px;
   position: relative;
   font-weight: 300;
+}
+.frame3-gallery {
+  /* Reset the white-space so content wraps as expected */
+  padding: 50px 0 0 70px;
+  /* Reset the white-space so content wraps as expected */
+  white-space: normal;
+  position: relative;
+}
+.frame3-gallery .title-gallery {
+  font-size: 44px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+.frame3-gallery .sub-title-frame1 {
+  font-size: 44px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+  padding-bottom: 15px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.frame3-gallery .sub-title-frame1:after {
+  height: 3px;
+  width: 100px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: white;
+  left: 0;
+}
+.frame3-gallery .description-frame1 {
+  font-size: 25px;
+  color: white;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+.frame3-gallery .view-gallery {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1em;
+  padding: 8px 20px;
+  color: #2c2c2c;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fed8a1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.frame3-gallery .view-gallery:focus,
+.frame3-gallery .view-gallery:hover {
+  color: #2c2c2c;
+  background-color: #ffd899;
+}
+.frame4 {
+  padding: 0 0 0 80px;
+  /* Reset the white-space so content wraps as expected */
+  white-space: normal;
 }
 .frame4 .title-frame4 {
   display: block;
