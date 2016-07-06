@@ -1,6 +1,164 @@
 .frame2 {
-  padding: 0 0 0 125px;
-
+  padding: 0 95px;
+  text-align: center;
   /* Reset the white-space so content wraps as expected */
   white-space: normal;
+  .title-frame2 {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
+  }
+  .frame2-content {
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+  }
+  .frame2-group{
+    width: 100%;
+    height: 36px;
+    display: block;
+    background-color: #fed8a1;
+    margin: 40px 0;
+    .border-radius(8px);
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      background: url("../images/icon-frame2.png") no-repeat center;
+      width: 111px;
+      height: 111px;
+      left: 50%;
+      top: 50%;
+      margin-left: -55px;
+      margin-top: -55px;
+    }
+    li{
+      display: inline-block;
+      width: 50%;
+      .btn-frame2{
+        padding: 0 30px;
+        .border-radius(8px);
+        font-size: 14px;
+        width: 100%;
+        color: #212121;
+        line-height: 36px;
+        display: block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        .transition();
+        &:hover{
+          background-color: #dcb587;
+        }
+      }
+    }
+  }
+  .panel-group{
+    .panel{
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      text-align: left;
+      .border-radius(0);
+      .panel-title{
+        position: relative;
+        padding-left: 35px;
+        a{
+          color: white;
+          display: block;
+          span{
+            font-size: 18px;
+            display: block;
+            font-weight: 700;
+          }
+          &:hover{
+            color: whitesmoke;
+          }
+          .panel-arrow{
+            display: block;
+            position: absolute;
+            background: url("../images/arrow-active.png") no-repeat center;
+            width: 24px;
+            height: 17px;
+            .transition();
+            left: 0;
+            top: 0;
+          }
+          &.collapsed{
+            .panel-arrow{
+              background: url("../images/arrow.png") no-repeat center;
+              width: 17px;
+              height: 24px;
+              display: block;
+              position: absolute;
+              .transition();
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+      .panel-body{
+        border-top: 0;
+        font-size: 12px;
+        color: white;
+        padding-top: 0;
+        padding-bottom: 0;
+        .content-group1{
+          text-align: center;
+          color: white;
+          a{
+            display: block;
+            color: white;
+            &.link-group{
+              text-decoration: underline;
+            }
+            i.icon-home{
+              display: block;
+              background: url("../images/icon-home.png") no-repeat center;
+              width: 83px;
+              height: 83px;
+              margin: 0 auto 10px;
+            }
+            .icon-facebook{
+              display: block;
+              background: url("../images/icon-facebook.png") no-repeat center;
+              width: 83px;
+              height: 83px;
+              margin: 0 auto 10px;
+            }
+            .icon-question{
+              display: block;
+              background: url("../images/icon-question.png") no-repeat center;
+              width: 83px;
+              height: 83px;
+              margin: 0 auto 10px;
+            }
+          }
+          .content-group{
+            color: white;
+          }
+        }
+        .content-group2{
+          padding-left: 30px;
+          .content-group{
+            color: white;
+          }
+        }
+        .content-group3{
+          padding-left: 30px;
+          .content-group{
+            color: white;
+            margin-bottom: 15px;
+            span.question{
+              display: block;
+              color: white;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

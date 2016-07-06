@@ -14,4 +14,17 @@ $(document).ready(function () {
     }
   );
   wow.init();
+  $('.content-group3').slimScroll({
+    height: '150px'
+  });
+
+  var d = $('#loginWithFacebook');
+  $('.open').click(function(e){
+    d.removeClass('dialog-close');
+    d.addClass('dialog-open');
+  });
+  $('.close-dialog, .dialog-overlay').click(function(e){
+    d.removeClass('dialog-open');
+    d.addClass('dialog-close');
+  });
 });
