@@ -1,152 +1,283 @@
-.step3-bg{
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.frame3{
+.frame3 {
   padding: 0;
   /* Reset the white-space so content wraps as expected */
   white-space: normal;
-  .logo-event{
+  .logo-event {
     display: block;
     position: absolute;
     left: 50%;
     top: 0;
     margin-left: -163px;
   }
-  .carousel {
-    .transform(translateY(0px) translateZ(0px));
-    width:820px;
-    position: absolute !important;
-    margin-left: -420px;
-    left: 50%;
-    display: block;
-    img {
-      display: block; /* hide images until carousel prepares them */
-      cursor: pointer; /* not needed if you wrap carousel items in links */
+  .question-list {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .carousel {
+      .transform(translateY(0px) translateZ(0px));
+      width: 820px;
+      position: absolute !important;
+      margin-left: -420px;
+      left: 50%;
+      display: block;
+      img {
+        display: block; /* hide images until carousel prepares them */
+        cursor: pointer; /* not needed if you wrap carousel items in links */
+      }
     }
-  }
-  .promotion-block{
-    display: block;
-    position: absolute;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    padding-top: 50px;
-    i.icon-device{
-      background: url("../images/event/icon-device.png") no-repeat center;
-      width: 22px;
-      height: 36px;
+    .promotion-block {
       display: block;
       position: absolute;
-      left: 50%;
-      top: 10px;
-      margin-left: -11px;
-      &:after{
-        content: '';
-        height: 1px;
-        width: 90px;
-        position: absolute;
-        top: 18px;
-        left: -100px;
-        background-color: #525252;
-      }
-      &:before{
-        content: '';
-        height: 1px;
-        width: 90px;
-        position: absolute;
-        top: 18px;
-        right: -100px;
-        background-color: #525252;
-      }
-    }
-    .title-frame3{
-      font-size: 25px;
-      color: #525252;
-      padding-bottom: 10px;
-      position: relative;
-      margin-bottom: 10px;
-      font-weight: 400;
-      &:after{
-        position: absolute;
-        content: '';
-        width: 210px;
-        height: 1px;
-        background-color: #525252;
-        bottom: 0;
-        left: 50%;
-        margin-left: -105px;
-      }
-    }
-    .description-frame3{
-      font-size: 18px;
-      color: #525252;
-      padding-bottom: 15px;
-      position: relative;
-      font-weight: 300;
-    }
-  }
-}
-
-.frame3-gallery{
-  /* Reset the white-space so content wraps as expected */
-  padding: 50px 0 0 70px;
-  /* Reset the white-space so content wraps as expected */
-  white-space: normal;
-  position: relative;
-  .title-gallery{
-    font-size: 44px;
-    color: white;
-    font-weight: 300;
-    text-align: center;
-  }
-
-  .sub-title-frame1{
-    font-size: 44px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
-    padding-bottom: 15px;
-    position: relative;
-    margin-bottom: 15px;
-    &:after{
-      height: 3px;
-      width: 100px;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      background: white;
       left: 0;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+      padding-top: 50px;
+      i.icon-device {
+        background: url("../images/event/icon-device.png") no-repeat center;
+        width: 22px;
+        height: 36px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        margin-left: -11px;
+        &:after {
+          content: '';
+          height: 1px;
+          width: 90px;
+          position: absolute;
+          top: 18px;
+          left: -100px;
+          background-color: #525252;
+        }
+        &:before {
+          content: '';
+          height: 1px;
+          width: 90px;
+          position: absolute;
+          top: 18px;
+          right: -100px;
+          background-color: #525252;
+        }
+      }
+      .title-frame3 {
+        font-size: 25px;
+        color: #525252;
+        padding-bottom: 10px;
+        position: relative;
+        margin-bottom: 10px;
+        font-weight: 400;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 210px;
+          height: 1px;
+          background-color: #525252;
+          bottom: 0;
+          left: 50%;
+          margin-left: -105px;
+        }
+      }
+      .description-frame3 {
+        font-size: 18px;
+        color: #525252;
+        padding-bottom: 15px;
+        position: relative;
+        font-weight: 300;
+      }
     }
   }
+  .question, .reward, .lost {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    .content-block {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: block;
+      .wrapper-block {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        .transform(translate(-50%, -50%));
+        width: 100%;
+        color: white;
+        .image-block {
+          text-align: right;
+          position: relative;
+          padding-right: 100px;
+          .btn-back {
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            left: 55px;
+            span {
+              font-size: 18px;
+              color: #404040;
+            }
+            i.icon-back {
+              background: url("../images/icon-back.png") no-repeat center;
+              width: 50px;
+              height: 23px;
+              position: absolute;
+              top: -30px;
+            }
+          }
+        }
+        .question-block {
+          width: 80%;
+          display: block;
+          position: relative;
+          .question-title {
+            font-size: 25px;
+            color: #404040;
+            margin-bottom: 20px;
+            padding: 0 15px;
+          }
+          .question-description {
+            font-size: 18px;
+            padding: 0 15px;
+            color: #404040;
+            font-weight: 300;
+            margin-bottom: 20px;
+          }
+          @DarkBrown: #484848;
+          @White: #fff;
 
-  .description-frame1{
-    font-size: 25px;
-    color: white;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
-  }
-
-
-  .view-gallery {
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 1em;
-    padding: 8px 20px;
-    color: #2c2c2c;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #fed8a1;
-    .transition();
-    .border-radius(8px);
-    &:focus, &:hover {
-      color: #2c2c2c;
-      background-color: #ffd899;
+          div.radio {
+            margin: 0 0 0.75em 0;
+            input[type="radio"] {
+              display: none;
+              + label {
+                color: @DarkBrown;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                span {
+                  display: inline-block;
+                  width: 19px;
+                  height: 19px;
+                  border: 1px solid @DarkBrown;
+                  margin: -1px 20px 0 0;
+                  vertical-align: middle;
+                  cursor: pointer;
+                  .rotate(45deg);
+                  position: relative;
+                  > i {
+                    text-align: center;
+                    .rotate(-45deg);
+                    display: block;
+                    vertical-align: middle;
+                    line-height: 15px;
+                    font-style: normal;
+                  }
+                }
+                span {
+                  background-color: @White;
+                  > i {
+                    color: @DarkBrown;
+                  }
+                }
+              }
+              &:checked + label {
+                font-weight: 600;
+                span {
+                  background-color: @DarkBrown;
+                  > i {
+                    color: @White;
+                  }
+                }
+              }
+            }
+            input[type="radio"] + label span,
+            input[type="radio"]:checked + label span {
+              -webkit-transition: background-color 0.4s linear;
+              -o-transition: background-color 0.4s linear;
+              -moz-transition: background-color 0.4s linear;
+              transition: background-color 0.4s linear;
+            }
+          }
+          .form-group {
+            .btn-submit {
+              width: 188px;
+              height: 42px;
+              text-align: center;
+              vertical-align: middle;
+              line-height: 42px;
+              border: 1px solid #2c2c2c;
+              background-color: transparent;
+              font-weight: 600;
+              color: #2c2c2c;
+              .border-radius(2px);
+              .transition();
+              margin-top: 20px;
+              margin-bottom: 20px;
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+              }
+            }
+            .note-form {
+              color: #2c2c2c;
+              font-size: 16px;
+              display: block;
+            }
+          }
+        }
+        .reward-block, .lost-block {
+          width: 80%;
+          display: block;
+          position: relative;
+          .reward-title, .lost-title {
+            font-size: 25px;
+            color: #404040;
+            margin-bottom: 10px;
+            font-weight: 700;
+          }
+          .reward-description, .lost-description {
+            font-size: 14px;
+            color: #404040;
+            font-weight: 300;
+            margin-bottom: 20px;
+            a {
+              text-decoration: underline;
+            }
+          }
+          .reward-action, .lost-action {
+            display: block;
+            width: 100%;
+            .btn-reward, .btn-lost {
+              padding: 10px 20px;
+              font-size: 16px;
+              font-weight: 600;
+              color: white;
+              display: inline-block;
+              background-color: #00b1b7;
+              .transition();
+              &.view-gallery {
+                margin-right: 25px;
+              }
+              &:hover{
+                background-color: hsl(182, 100%, 40%);
+              }
+            }
+          }
+        }
+        .lost-block{
+          .result-lost{
+            font-size: 20px;
+            color: #404040;
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
+  }
+  .lost {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-dodge;
   }
 }

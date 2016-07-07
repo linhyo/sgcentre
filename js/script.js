@@ -29,7 +29,7 @@ $(document).ready(function () {
   });
 
   var dialogGallery = $('#dialogGallery');
-  $('.btn-login-with-facebook').click(function(e){
+  $('.btn-login-with-facebook, .view-gallery').click(function(e){
     dialogGallery.removeClass('dialog-close');
     dialogGallery.addClass('dialog-open');
   });

@@ -1474,11 +1474,6 @@ p {
   color: white;
   font-size: 16px;
 }
-.step3-bg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .frame3 {
   padding: 0;
   /* Reset the white-space so content wraps as expected */
@@ -1491,7 +1486,12 @@ p {
   top: 0;
   margin-left: -163px;
 }
-.frame3 .carousel {
+.frame3 .question-list {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.frame3 .question-list .carousel {
   -webkit-transform: translateY(0px) translateZ(0px);
   -moz-transform: translateY(0px) translateZ(0px);
   -o-transform: translateY(0px) translateZ(0px);
@@ -1503,13 +1503,13 @@ p {
   left: 50%;
   display: block;
 }
-.frame3 .carousel img {
+.frame3 .question-list .carousel img {
   display: block;
   /* hide images until carousel prepares them */
   cursor: pointer;
   /* not needed if you wrap carousel items in links */
 }
-.frame3 .promotion-block {
+.frame3 .question-list .promotion-block {
   display: block;
   position: absolute;
   left: 0;
@@ -1518,7 +1518,7 @@ p {
   bottom: 0;
   padding-top: 50px;
 }
-.frame3 .promotion-block i.icon-device {
+.frame3 .question-list .promotion-block i.icon-device {
   background: url("../images/event/icon-device.png") no-repeat center;
   width: 22px;
   height: 36px;
@@ -1528,7 +1528,7 @@ p {
   top: 10px;
   margin-left: -11px;
 }
-.frame3 .promotion-block i.icon-device:after {
+.frame3 .question-list .promotion-block i.icon-device:after {
   content: '';
   height: 1px;
   width: 90px;
@@ -1537,7 +1537,7 @@ p {
   left: -100px;
   background-color: #525252;
 }
-.frame3 .promotion-block i.icon-device:before {
+.frame3 .question-list .promotion-block i.icon-device:before {
   content: '';
   height: 1px;
   width: 90px;
@@ -1546,7 +1546,7 @@ p {
   right: -100px;
   background-color: #525252;
 }
-.frame3 .promotion-block .title-frame3 {
+.frame3 .question-list .promotion-block .title-frame3 {
   font-size: 25px;
   color: #525252;
   padding-bottom: 10px;
@@ -1554,7 +1554,7 @@ p {
   margin-bottom: 10px;
   font-weight: 400;
 }
-.frame3 .promotion-block .title-frame3:after {
+.frame3 .question-list .promotion-block .title-frame3:after {
   position: absolute;
   content: '';
   width: 210px;
@@ -1564,78 +1564,391 @@ p {
   left: 50%;
   margin-left: -105px;
 }
-.frame3 .promotion-block .description-frame3 {
+.frame3 .question-list .promotion-block .description-frame3 {
   font-size: 18px;
   color: #525252;
   padding-bottom: 15px;
   position: relative;
   font-weight: 300;
 }
-.frame3-gallery {
-  /* Reset the white-space so content wraps as expected */
-  padding: 50px 0 0 70px;
-  /* Reset the white-space so content wraps as expected */
-  white-space: normal;
+.frame3 .question,
+.frame3 .reward,
+.frame3 .lost {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  display: block;
 }
-.frame3-gallery .title-gallery {
-  font-size: 44px;
-  color: white;
-  font-weight: 300;
-  text-align: center;
-}
-.frame3-gallery .sub-title-frame1 {
-  font-size: 44px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
-  padding-bottom: 15px;
+.frame3 .question .content-block,
+.frame3 .reward .content-block,
+.frame3 .lost .content-block {
   position: relative;
-  margin-bottom: 15px;
+  width: 100%;
+  height: 100vh;
+  display: block;
 }
-.frame3-gallery .sub-title-frame1:after {
-  height: 3px;
-  width: 100px;
-  content: '';
+.frame3 .question .content-block .wrapper-block,
+.frame3 .reward .content-block .wrapper-block,
+.frame3 .lost .content-block .wrapper-block {
   position: absolute;
-  bottom: 0;
-  background: white;
-  left: 0;
-}
-.frame3-gallery .description-frame1 {
-  font-size: 25px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
   color: white;
-  font-weight: 300;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
 }
-.frame3-gallery .view-gallery {
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 1em;
-  padding: 8px 20px;
-  color: #2c2c2c;
-  text-decoration: none;
+.frame3 .question .content-block .wrapper-block .image-block,
+.frame3 .reward .content-block .wrapper-block .image-block,
+.frame3 .lost .content-block .wrapper-block .image-block {
+  text-align: right;
+  position: relative;
+  padding-right: 100px;
+}
+.frame3 .question .content-block .wrapper-block .image-block .btn-back,
+.frame3 .reward .content-block .wrapper-block .image-block .btn-back,
+.frame3 .lost .content-block .wrapper-block .image-block .btn-back {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: 55px;
+}
+.frame3 .question .content-block .wrapper-block .image-block .btn-back span,
+.frame3 .reward .content-block .wrapper-block .image-block .btn-back span,
+.frame3 .lost .content-block .wrapper-block .image-block .btn-back span {
   font-size: 18px;
+  color: #404040;
+}
+.frame3 .question .content-block .wrapper-block .image-block .btn-back i.icon-back,
+.frame3 .reward .content-block .wrapper-block .image-block .btn-back i.icon-back,
+.frame3 .lost .content-block .wrapper-block .image-block .btn-back i.icon-back {
+  background: url("../images/icon-back.png") no-repeat center;
+  width: 50px;
+  height: 23px;
+  position: absolute;
+  top: -30px;
+}
+.frame3 .question .content-block .wrapper-block .question-block,
+.frame3 .reward .content-block .wrapper-block .question-block,
+.frame3 .lost .content-block .wrapper-block .question-block {
+  width: 80%;
+  display: block;
+  position: relative;
+}
+.frame3 .question .content-block .wrapper-block .question-block .question-title,
+.frame3 .reward .content-block .wrapper-block .question-block .question-title,
+.frame3 .lost .content-block .wrapper-block .question-block .question-title {
+  font-size: 25px;
+  color: #404040;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.frame3 .question .content-block .wrapper-block .question-block .question-description,
+.frame3 .reward .content-block .wrapper-block .question-block .question-description,
+.frame3 .lost .content-block .wrapper-block .question-block .question-description {
+  font-size: 18px;
+  padding: 0 15px;
+  color: #404040;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio {
+  margin: 0 0 0.75em 0;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"],
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"],
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] {
+  display: none;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label {
+  color: #484848;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #484848;
+  margin: -1px 20px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i {
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  display: block;
+  vertical-align: middle;
+  line-height: 15px;
+  font-style: normal;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span {
+  background-color: #ffffff;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i {
+  color: #484848;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label {
   font-weight: 600;
-  background-color: #fed8a1;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span {
+  background-color: #484848;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i {
+  color: #ffffff;
+}
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+.frame3 .question .content-block .wrapper-block .question-block .form-group .btn-submit,
+.frame3 .reward .content-block .wrapper-block .question-block .form-group .btn-submit,
+.frame3 .lost .content-block .wrapper-block .question-block .form-group .btn-submit {
+  width: 188px;
+  height: 42px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 42px;
+  border: 1px solid #2c2c2c;
+  background-color: transparent;
+  font-weight: 600;
+  color: #2c2c2c;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.frame3-gallery .view-gallery:focus,
-.frame3-gallery .view-gallery:hover {
+.frame3 .question .content-block .wrapper-block .question-block .form-group .btn-submit:hover,
+.frame3 .reward .content-block .wrapper-block .question-block .form-group .btn-submit:hover,
+.frame3 .lost .content-block .wrapper-block .question-block .form-group .btn-submit:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.frame3 .question .content-block .wrapper-block .question-block .form-group .note-form,
+.frame3 .reward .content-block .wrapper-block .question-block .form-group .note-form,
+.frame3 .lost .content-block .wrapper-block .question-block .form-group .note-form {
   color: #2c2c2c;
-  background-color: #ffd899;
+  font-size: 16px;
+  display: block;
+}
+.frame3 .question .content-block .wrapper-block .reward-block,
+.frame3 .reward .content-block .wrapper-block .reward-block,
+.frame3 .lost .content-block .wrapper-block .reward-block,
+.frame3 .question .content-block .wrapper-block .lost-block,
+.frame3 .reward .content-block .wrapper-block .lost-block,
+.frame3 .lost .content-block .wrapper-block .lost-block {
+  width: 80%;
+  display: block;
+  position: relative;
+}
+.frame3 .question .content-block .wrapper-block .reward-block .reward-title,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-title,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-title,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-title,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-title,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-title,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-title,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-title,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-title,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-title,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-title,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-title {
+  font-size: 25px;
+  color: #404040;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.frame3 .question .content-block .wrapper-block .reward-block .reward-description,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-description,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-description,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-description,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-description,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-description,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-description,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-description,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-description,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-description,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-description,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-description {
+  font-size: 14px;
+  color: #404040;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.frame3 .question .content-block .wrapper-block .reward-block .reward-description a,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-description a,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-description a,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-description a,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-description a,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-description a,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-description a,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-description a,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-description a,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-description a,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-description a,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-description a {
+  text-decoration: underline;
+}
+.frame3 .question .content-block .wrapper-block .reward-block .reward-action,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-action,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-action,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-action,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-action,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-action,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-action,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-action,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-action,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-action,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-action,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-action {
+  display: block;
+  width: 100%;
+}
+.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-reward,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-reward,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-reward,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-reward,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-reward,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-reward,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-reward,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-reward,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-reward,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-reward,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-reward,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-reward,
+.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-lost,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-lost,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-lost,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-lost,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-lost,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-lost,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-lost,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-lost,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-lost,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-lost,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-lost,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-lost {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  background-color: #00b1b7;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
+.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery {
+  margin-right: 25px;
+}
+.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
+.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
+.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
+.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
+.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
+.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
+.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
+.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
+.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
+.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
+.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover,
+.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover,
+.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover {
+  background-color: #00c5cc;
+}
+.frame3 .question .content-block .wrapper-block .lost-block .result-lost,
+.frame3 .reward .content-block .wrapper-block .lost-block .result-lost,
+.frame3 .lost .content-block .wrapper-block .lost-block .result-lost {
+  font-size: 20px;
+  color: #404040;
+  margin-bottom: 20px;
+}
+.frame3 .lost {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color-dodge;
 }
 .frame4 {
   padding: 0 0 0 80px;
