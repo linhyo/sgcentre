@@ -18,13 +18,23 @@ $(document).ready(function () {
     height: '150px'
   });
 
-  var d = $('#loginWithFacebook');
+  var dialogLogin = $('#loginWithFacebook');
   $('.open').click(function(e){
-    d.removeClass('dialog-close');
-    d.addClass('dialog-open');
+    dialogLogin.removeClass('dialog-close');
+    dialogLogin.addClass('dialog-open');
   });
-  $('.close-dialog, .dialog-overlay').click(function(e){
-    d.removeClass('dialog-open');
-    d.addClass('dialog-close');
+  $('.btn-login-with-facebook, .close-dialog-login, .dialog-overlay').click(function(e){
+    dialogLogin.removeClass('dialog-open');
+    dialogLogin.addClass('dialog-close');
+  });
+
+  var dialogGallery = $('#dialogGallery');
+  $('.btn-login-with-facebook').click(function(e){
+    dialogGallery.removeClass('dialog-close');
+    dialogGallery.addClass('dialog-open');
+  });
+  $('.close-dialog-gallery').click(function(e){
+    dialogGallery.removeClass('dialog-open');
+    dialogGallery.addClass('dialog-close');
   });
 });
