@@ -13,16 +13,48 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: block;
     .carousel {
       .transform(translateY(0px) translateZ(0px));
       width: 820px;
       position: absolute !important;
       margin-left: -420px;
       left: 50%;
+      top: 50%;
       display: block;
       img {
         display: block; /* hide images until carousel prepares them */
         cursor: pointer; /* not needed if you wrap carousel items in links */
+      }
+      .block-image{
+        &.isLog{
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          &:after{
+            position: absolute;
+            content: '';
+            top: 30px;
+            left: 50%;
+            margin-left: -20px;
+            background: url("../images/icon-lock-event.png") no-repeat center;
+            width: 39px;
+            height: 45px;
+          }
+        }
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          img{
+            display: block;
+          }
+        }
       }
     }
     .promotion-block {

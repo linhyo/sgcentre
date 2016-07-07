@@ -1490,6 +1490,10 @@ p {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: block;
 }
 .frame3 .question-list .carousel {
   -webkit-transform: translateY(0px) translateZ(0px);
@@ -1501,6 +1505,7 @@ p {
   position: absolute !important;
   margin-left: -420px;
   left: 50%;
+  top: 50%;
   display: block;
 }
 .frame3 .question-list .carousel img {
@@ -1508,6 +1513,31 @@ p {
   /* hide images until carousel prepares them */
   cursor: pointer;
   /* not needed if you wrap carousel items in links */
+}
+.frame3 .question-list .carousel .block-image.isLog {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.frame3 .question-list .carousel .block-image.isLog:after {
+  position: absolute;
+  content: '';
+  top: 30px;
+  left: 50%;
+  margin-left: -20px;
+  background: url("../images/icon-lock-event.png") no-repeat center;
+  width: 39px;
+  height: 45px;
+}
+.frame3 .question-list .carousel .block-image a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.frame3 .question-list .carousel .block-image a img {
+  display: block;
 }
 .frame3 .question-list .promotion-block {
   display: block;
