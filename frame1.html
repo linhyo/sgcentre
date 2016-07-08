@@ -265,13 +265,13 @@
           <div class="frame3">
             <a href="#" class="logo-event"><img src="images/event/logo-event.png" alt=""/></a>
 
-            <div class="question-list" style="background-image: url(images/frame/bg-frame3-1.png); display: inherit">
+            <div id="question-list" style="background-image: url(images/frame/bg-frame3-1.png); display: inherit">
               <div class="carousel">
-                <div class="block-image isOpen"><a href="#"><img src="images/event/event1.png" alt="Image 1"/></a></div>
-                <div class="block-image isLog"><a href="#"><img src="images/event/event2.png" alt="Image 2"/></a></div>
-                <div class="block-image isLog"><a href="#"><img src="images/event/event3.png" alt="Image 3"/></a></div>
-                <div class="block-image isLog"><a href="#"><img src="images/event/event4.png" alt="Image 4"/></a></div>
-                <div class="block-image isOver"><a href="#"><img src="images/event/event5.png" alt="Image 5"/></a></div>
+                <div class="block-image"><a class="isOpen" href="#"><img src="images/event/event1.png" alt="Image 1"/></a></div>
+                <div class="block-image"><a class="isLog" href="#"><img src="images/event/event2.png" alt="Image 2"/></a></div>
+                <div class="block-image"><a class="isLog" href="#"><img src="images/event/event3.png" alt="Image 3"/></a></div>
+                <div class="block-image"><a class="isLog" href="#"><img src="images/event/event4.png" alt="Image 4"/></a></div>
+                <div class="block-image"><a class="isOver" href="#"><img src="images/event/event5.png" alt="Image 5"/></a></div>
               </div>
 
               <div class="promotion-block">
@@ -284,7 +284,7 @@
                 </h3>
               </div>
             </div>
-            <div class="question" style="display: none">
+            <div id="question" class="sub-block" style="display: none">
               <div class="row">
                 <div class="col-md-6">
                   <div class="content-block">
@@ -308,7 +308,7 @@
                           Đây cũng là một thương hiệu nổi tiếng của Nhật theo mô hình Department Store.
                         </p>
 
-                        <form>
+                        <form id="question-data">
                           <div class="radio">
                             <input type="radio" name="optionsRadios" id="value1" value="A">
                             <label for="value1">
@@ -346,7 +346,7 @@
                 </div>
               </div>
             </div>
-            <div class="reward" style="display: none">
+            <div id="reward" class="sub-block" style="display: none">
               <div class="row">
                 <div class="col-md-6">
                   <div class="content-block">
@@ -381,7 +381,7 @@
                 </div>
               </div>
             </div>
-            <div class="lost" style="background-image: url(images/question/lost-bg.png); display: none">
+            <div id="lost" class="sub-block" style="background-image: url(images/question/lost-bg.png); display: none">
               <div class="row">
                 <div class="col-md-6">
                   <div class="content-block">
@@ -527,7 +527,7 @@
       </div>
     </div>
   </div>
-
+</div>
 
   <script type="text/javascript" src="js/lib/jquery-2.2.3.min.js"></script>
   <script type="text/javascript" src="js/lib/jquery.easing.min.js"></script>

@@ -1486,7 +1486,7 @@ p {
   top: 0;
   margin-left: -163px;
 }
-.frame3 .question-list {
+.frame3 #question-list {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1495,7 +1495,7 @@ p {
   height: 100vh;
   display: block;
 }
-.frame3 .question-list .carousel {
+.frame3 #question-list .carousel {
   -webkit-transform: translateY(0px) translateZ(0px);
   -moz-transform: translateY(0px) translateZ(0px);
   -o-transform: translateY(0px) translateZ(0px);
@@ -1508,19 +1508,19 @@ p {
   top: 50%;
   display: block;
 }
-.frame3 .question-list .carousel img {
+.frame3 #question-list .carousel img {
   display: block;
   /* hide images until carousel prepares them */
   cursor: pointer;
   /* not needed if you wrap carousel items in links */
 }
-.frame3 .question-list .carousel .block-image.isLog {
+.frame3 #question-list .carousel .block-image.isLog {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
-.frame3 .question-list .carousel .block-image.isLog:after {
+.frame3 #question-list .carousel .block-image.isLog:after {
   position: absolute;
   content: '';
   top: 30px;
@@ -1530,16 +1530,16 @@ p {
   width: 39px;
   height: 45px;
 }
-.frame3 .question-list .carousel .block-image a {
+.frame3 #question-list .carousel .block-image a {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
 }
-.frame3 .question-list .carousel .block-image a img {
+.frame3 #question-list .carousel .block-image a img {
   display: block;
 }
-.frame3 .question-list .promotion-block {
+.frame3 #question-list .promotion-block {
   display: block;
   position: absolute;
   left: 0;
@@ -1548,7 +1548,7 @@ p {
   bottom: 0;
   padding-top: 50px;
 }
-.frame3 .question-list .promotion-block i.icon-device {
+.frame3 #question-list .promotion-block i.icon-device {
   background: url("../images/event/icon-device.png") no-repeat center;
   width: 22px;
   height: 36px;
@@ -1558,7 +1558,7 @@ p {
   top: 10px;
   margin-left: -11px;
 }
-.frame3 .question-list .promotion-block i.icon-device:after {
+.frame3 #question-list .promotion-block i.icon-device:after {
   content: '';
   height: 1px;
   width: 90px;
@@ -1567,7 +1567,7 @@ p {
   left: -100px;
   background-color: #525252;
 }
-.frame3 .question-list .promotion-block i.icon-device:before {
+.frame3 #question-list .promotion-block i.icon-device:before {
   content: '';
   height: 1px;
   width: 90px;
@@ -1576,7 +1576,7 @@ p {
   right: -100px;
   background-color: #525252;
 }
-.frame3 .question-list .promotion-block .title-frame3 {
+.frame3 #question-list .promotion-block .title-frame3 {
   font-size: 25px;
   color: #525252;
   padding-bottom: 10px;
@@ -1584,7 +1584,7 @@ p {
   margin-bottom: 10px;
   font-weight: 400;
 }
-.frame3 .question-list .promotion-block .title-frame3:after {
+.frame3 #question-list .promotion-block .title-frame3:after {
   position: absolute;
   content: '';
   width: 210px;
@@ -1594,32 +1594,32 @@ p {
   left: 50%;
   margin-left: -105px;
 }
-.frame3 .question-list .promotion-block .description-frame3 {
+.frame3 #question-list .promotion-block .description-frame3 {
   font-size: 18px;
   color: #525252;
   padding-bottom: 15px;
   position: relative;
   font-weight: 300;
 }
-.frame3 .question,
-.frame3 .reward,
-.frame3 .lost {
+.frame3 #question,
+.frame3 #reward,
+.frame3 #lost {
   position: relative;
   width: 100%;
   height: 100vh;
   display: block;
 }
-.frame3 .question .content-block,
-.frame3 .reward .content-block,
-.frame3 .lost .content-block {
+.frame3 #question .content-block,
+.frame3 #reward .content-block,
+.frame3 #lost .content-block {
   position: relative;
   width: 100%;
   height: 100vh;
   display: block;
 }
-.frame3 .question .content-block .wrapper-block,
-.frame3 .reward .content-block .wrapper-block,
-.frame3 .lost .content-block .wrapper-block {
+.frame3 #question .content-block .wrapper-block,
+.frame3 #reward .content-block .wrapper-block,
+.frame3 #lost .content-block .wrapper-block {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1631,80 +1631,80 @@ p {
   width: 100%;
   color: white;
 }
-.frame3 .question .content-block .wrapper-block .image-block,
-.frame3 .reward .content-block .wrapper-block .image-block,
-.frame3 .lost .content-block .wrapper-block .image-block {
+.frame3 #question .content-block .wrapper-block .image-block,
+.frame3 #reward .content-block .wrapper-block .image-block,
+.frame3 #lost .content-block .wrapper-block .image-block {
   text-align: right;
   position: relative;
   padding-right: 100px;
 }
-.frame3 .question .content-block .wrapper-block .image-block .btn-back,
-.frame3 .reward .content-block .wrapper-block .image-block .btn-back,
-.frame3 .lost .content-block .wrapper-block .image-block .btn-back {
+.frame3 #question .content-block .wrapper-block .image-block .btn-back,
+.frame3 #reward .content-block .wrapper-block .image-block .btn-back,
+.frame3 #lost .content-block .wrapper-block .image-block .btn-back {
   position: absolute;
   top: 50%;
   margin-top: -20px;
   left: 55px;
 }
-.frame3 .question .content-block .wrapper-block .image-block .btn-back span,
-.frame3 .reward .content-block .wrapper-block .image-block .btn-back span,
-.frame3 .lost .content-block .wrapper-block .image-block .btn-back span {
+.frame3 #question .content-block .wrapper-block .image-block .btn-back span,
+.frame3 #reward .content-block .wrapper-block .image-block .btn-back span,
+.frame3 #lost .content-block .wrapper-block .image-block .btn-back span {
   font-size: 18px;
   color: #404040;
 }
-.frame3 .question .content-block .wrapper-block .image-block .btn-back i.icon-back,
-.frame3 .reward .content-block .wrapper-block .image-block .btn-back i.icon-back,
-.frame3 .lost .content-block .wrapper-block .image-block .btn-back i.icon-back {
+.frame3 #question .content-block .wrapper-block .image-block .btn-back i.icon-back,
+.frame3 #reward .content-block .wrapper-block .image-block .btn-back i.icon-back,
+.frame3 #lost .content-block .wrapper-block .image-block .btn-back i.icon-back {
   background: url("../images/icon-back.png") no-repeat center;
   width: 50px;
   height: 23px;
   position: absolute;
   top: -30px;
 }
-.frame3 .question .content-block .wrapper-block .question-block,
-.frame3 .reward .content-block .wrapper-block .question-block,
-.frame3 .lost .content-block .wrapper-block .question-block {
+.frame3 #question .content-block .wrapper-block .question-block,
+.frame3 #reward .content-block .wrapper-block .question-block,
+.frame3 #lost .content-block .wrapper-block .question-block {
   width: 80%;
   display: block;
   position: relative;
 }
-.frame3 .question .content-block .wrapper-block .question-block .question-title,
-.frame3 .reward .content-block .wrapper-block .question-block .question-title,
-.frame3 .lost .content-block .wrapper-block .question-block .question-title {
+.frame3 #question .content-block .wrapper-block .question-block .question-title,
+.frame3 #reward .content-block .wrapper-block .question-block .question-title,
+.frame3 #lost .content-block .wrapper-block .question-block .question-title {
   font-size: 25px;
   color: #404040;
   margin-bottom: 20px;
   padding: 0 15px;
 }
-.frame3 .question .content-block .wrapper-block .question-block .question-description,
-.frame3 .reward .content-block .wrapper-block .question-block .question-description,
-.frame3 .lost .content-block .wrapper-block .question-block .question-description {
+.frame3 #question .content-block .wrapper-block .question-block .question-description,
+.frame3 #reward .content-block .wrapper-block .question-block .question-description,
+.frame3 #lost .content-block .wrapper-block .question-block .question-description {
   font-size: 18px;
   padding: 0 15px;
   color: #404040;
   font-weight: 300;
   margin-bottom: 20px;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio {
+.frame3 #question .content-block .wrapper-block .question-block div.radio,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio {
   margin: 0 0 0.75em 0;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"],
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"],
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"],
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"],
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"] {
   display: none;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label {
   color: #484848;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span {
   display: inline-block;
   width: 19px;
   height: 19px;
@@ -1718,9 +1718,9 @@ p {
   -o-transform: rotate(45deg);
   position: relative;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i {
   text-align: center;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1731,45 +1731,45 @@ p {
   line-height: 15px;
   font-style: normal;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span {
   background-color: #ffffff;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span > i {
   color: #484848;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label {
   font-weight: 600;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span {
   background-color: #484848;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span > i {
   color: #ffffff;
 }
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
-.frame3 .question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
-.frame3 .reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
-.frame3 .lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span {
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"] + label span,
+.frame3 #question .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 #reward .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span,
+.frame3 #lost .content-block .wrapper-block .question-block div.radio input[type="radio"]:checked + label span {
   -webkit-transition: background-color 0.4s linear;
   -o-transition: background-color 0.4s linear;
   -moz-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
 }
-.frame3 .question .content-block .wrapper-block .question-block .form-group .btn-submit,
-.frame3 .reward .content-block .wrapper-block .question-block .form-group .btn-submit,
-.frame3 .lost .content-block .wrapper-block .question-block .form-group .btn-submit {
+.frame3 #question .content-block .wrapper-block .question-block .form-group .btn-submit,
+.frame3 #reward .content-block .wrapper-block .question-block .form-group .btn-submit,
+.frame3 #lost .content-block .wrapper-block .question-block .form-group .btn-submit {
   width: 188px;
   height: 42px;
   text-align: center;
@@ -1794,115 +1794,115 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.frame3 .question .content-block .wrapper-block .question-block .form-group .btn-submit:hover,
-.frame3 .reward .content-block .wrapper-block .question-block .form-group .btn-submit:hover,
-.frame3 .lost .content-block .wrapper-block .question-block .form-group .btn-submit:hover {
+.frame3 #question .content-block .wrapper-block .question-block .form-group .btn-submit:hover,
+.frame3 #reward .content-block .wrapper-block .question-block .form-group .btn-submit:hover,
+.frame3 #lost .content-block .wrapper-block .question-block .form-group .btn-submit:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.frame3 .question .content-block .wrapper-block .question-block .form-group .note-form,
-.frame3 .reward .content-block .wrapper-block .question-block .form-group .note-form,
-.frame3 .lost .content-block .wrapper-block .question-block .form-group .note-form {
+.frame3 #question .content-block .wrapper-block .question-block .form-group .note-form,
+.frame3 #reward .content-block .wrapper-block .question-block .form-group .note-form,
+.frame3 #lost .content-block .wrapper-block .question-block .form-group .note-form {
   color: #2c2c2c;
   font-size: 16px;
   display: block;
 }
-.frame3 .question .content-block .wrapper-block .reward-block,
-.frame3 .reward .content-block .wrapper-block .reward-block,
-.frame3 .lost .content-block .wrapper-block .reward-block,
-.frame3 .question .content-block .wrapper-block .lost-block,
-.frame3 .reward .content-block .wrapper-block .lost-block,
-.frame3 .lost .content-block .wrapper-block .lost-block {
+.frame3 #question .content-block .wrapper-block .reward-block,
+.frame3 #reward .content-block .wrapper-block .reward-block,
+.frame3 #lost .content-block .wrapper-block .reward-block,
+.frame3 #question .content-block .wrapper-block .lost-block,
+.frame3 #reward .content-block .wrapper-block .lost-block,
+.frame3 #lost .content-block .wrapper-block .lost-block {
   width: 80%;
   display: block;
   position: relative;
 }
-.frame3 .question .content-block .wrapper-block .reward-block .reward-title,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-title,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-title,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-title,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-title,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-title,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-title,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-title,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-title,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-title,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-title,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-title {
+.frame3 #question .content-block .wrapper-block .reward-block .reward-title,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-title,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-title,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-title,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-title,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-title,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-title,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-title,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-title,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-title,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-title,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-title {
   font-size: 25px;
   color: #404040;
   margin-bottom: 10px;
   font-weight: 700;
 }
-.frame3 .question .content-block .wrapper-block .reward-block .reward-description,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-description,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-description,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-description,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-description,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-description,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-description,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-description,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-description,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-description,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-description,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-description {
+.frame3 #question .content-block .wrapper-block .reward-block .reward-description,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-description,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-description,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-description,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-description,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-description,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-description,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-description,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-description,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-description,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-description,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-description {
   font-size: 14px;
   color: #404040;
   font-weight: 300;
   margin-bottom: 20px;
 }
-.frame3 .question .content-block .wrapper-block .reward-block .reward-description a,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-description a,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-description a,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-description a,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-description a,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-description a,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-description a,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-description a,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-description a,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-description a,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-description a,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-description a {
+.frame3 #question .content-block .wrapper-block .reward-block .reward-description a,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-description a,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-description a,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-description a,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-description a,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-description a,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-description a,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-description a,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-description a,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-description a,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-description a,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-description a {
   text-decoration: underline;
 }
-.frame3 .question .content-block .wrapper-block .reward-block .reward-action,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-action,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-action,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-action,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-action,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-action,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-action,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-action,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-action,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-action,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-action,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-action {
+.frame3 #question .content-block .wrapper-block .reward-block .reward-action,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-action,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-action,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-action,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-action,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-action,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-action,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-action,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-action,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-action,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-action,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-action {
   display: block;
   width: 100%;
 }
-.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-reward,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-reward,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-reward,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-reward,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-reward,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-reward,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-reward,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-reward,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-reward,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-reward,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-reward,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-reward,
-.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-lost,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-lost,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-lost,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-lost,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-lost,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-lost,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-lost,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-lost,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-lost,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-lost,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-lost,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-lost {
+.frame3 #question .content-block .wrapper-block .reward-block .reward-action .btn-reward,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-action .btn-reward,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-action .btn-reward,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-action .btn-reward,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-action .btn-reward,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-action .btn-reward,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-action .btn-reward,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-action .btn-reward,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-action .btn-reward,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-action .btn-reward,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-action .btn-reward,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-action .btn-reward,
+.frame3 #question .content-block .wrapper-block .reward-block .reward-action .btn-lost,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-action .btn-lost,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-action .btn-lost,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-action .btn-lost,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-action .btn-lost,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-action .btn-lost,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-action .btn-lost,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-action .btn-lost,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-action .btn-lost,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-action .btn-lost,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-action .btn-lost,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-action .btn-lost {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
@@ -1915,66 +1915,66 @@ p {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
-.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery {
+.frame3 #question .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-action .btn-reward.view-gallery,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-action .btn-reward.view-gallery,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-action .btn-reward.view-gallery,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-action .btn-reward.view-gallery,
+.frame3 #question .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-action .btn-lost.view-gallery,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-action .btn-lost.view-gallery,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-action .btn-lost.view-gallery,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-action .btn-lost.view-gallery {
   margin-right: 25px;
 }
-.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
-.frame3 .question .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
-.frame3 .reward .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
-.frame3 .lost .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
-.frame3 .question .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
-.frame3 .reward .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
-.frame3 .lost .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
-.frame3 .question .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
-.frame3 .reward .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
-.frame3 .lost .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
-.frame3 .question .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover,
-.frame3 .reward .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover,
-.frame3 .lost .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover {
+.frame3 #question .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-action .btn-reward:hover,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-action .btn-reward:hover,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-action .btn-reward:hover,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-action .btn-reward:hover,
+.frame3 #question .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
+.frame3 #reward .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
+.frame3 #lost .content-block .wrapper-block .reward-block .reward-action .btn-lost:hover,
+.frame3 #question .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
+.frame3 #reward .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
+.frame3 #lost .content-block .wrapper-block .lost-block .reward-action .btn-lost:hover,
+.frame3 #question .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
+.frame3 #reward .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
+.frame3 #lost .content-block .wrapper-block .reward-block .lost-action .btn-lost:hover,
+.frame3 #question .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover,
+.frame3 #reward .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover,
+.frame3 #lost .content-block .wrapper-block .lost-block .lost-action .btn-lost:hover {
   background-color: #00c5cc;
 }
-.frame3 .question .content-block .wrapper-block .lost-block .result-lost,
-.frame3 .reward .content-block .wrapper-block .lost-block .result-lost,
-.frame3 .lost .content-block .wrapper-block .lost-block .result-lost {
+.frame3 #question .content-block .wrapper-block .lost-block .result-lost,
+.frame3 #reward .content-block .wrapper-block .lost-block .result-lost,
+.frame3 #lost .content-block .wrapper-block .lost-block .result-lost {
   font-size: 20px;
   color: #404040;
   margin-bottom: 20px;
 }
-.frame3 .lost {
+.frame3 #lost {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
