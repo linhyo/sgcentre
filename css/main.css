@@ -1256,7 +1256,7 @@ p {
   font-weight: 300;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
 }
-.frame1 .view-gallery {
+.frame1 .view-gallery-btn {
   cursor: pointer;
   display: inline-block;
   margin-top: 1em;
@@ -1279,8 +1279,8 @@ p {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-.frame1 .view-gallery:focus,
-.frame1 .view-gallery:hover {
+.frame1 .view-gallery-btn:focus,
+.frame1 .view-gallery-btn:hover {
   color: #2c2c2c;
   background-color: #ffd899;
 }
