@@ -611,23 +611,23 @@
   }
 }
 
-#dialogGallery{
-  .dialog-content{
+#dialogGallery {
+  .dialog-content {
     width: 100%;
     max-width: 100%;
     height: 100vh;
-    .gallery-background{
+    .gallery-background {
       z-index: 101;
       background-position: 50% 50%;
       background-size: cover;
       background-repeat: no-repeat;
       height: 100vh;
-      .gallery-content{
+      .gallery-content {
         height: 100vh;
         width: 100%;
         display: block;
         position: relative;
-        .group-gallery{
+        .group-gallery {
           position: absolute;
           left: 50%;
           top: 50%;
@@ -636,7 +636,7 @@
           color: white;
           text-align: center;
           padding-top: 30px;
-          i.icon-gallery{
+          i.icon-gallery {
             background: url("../images/icon-gallery.png") no-repeat center;
             width: 26px;
             height: 31px;
@@ -663,25 +663,25 @@
               top: 15px;
             }
           }
-          .title-gallery{
+          .title-gallery {
             color: white;
             font-size: 50px;
             text-transform: uppercase;
             font-weight: 300;
             margin-top: 15px;
           }
-          .total-gallery{
+          .total-gallery {
             margin-top: 15px;
             display: block;
             padding: 30px 80px;
             border-top: 1px solid hsl(182, 75%, 81%);
-            .title-total-gallery{
+            .title-total-gallery {
               color: white;
               font-size: 25px;
               font-weight: 300;
               margin-bottom: 15px;
             }
-            .result{
+            .result {
               width: 240px;
               margin: 0 auto;
               padding: 0 0 0 160px;
@@ -689,7 +689,7 @@
               color: white;
               font-size: 25px;
               font-weight: 300;
-              span{
+              span {
                 line-height: 75px;
                 font-weight: 300;
                 position: absolute;
@@ -700,7 +700,7 @@
               }
             }
           }
-          .btn-gallery{
+          .btn-gallery {
             background-color: white;
             color: #0091a6;
             font-size: 18px;
@@ -711,13 +711,62 @@
             text-align: center;
             display: inline-block;
             .transition();
-            &.close-dialog-gallery{
+            &.close-dialog-gallery {
               margin-left: 20px;
             }
-            &:hover{
+            &:hover {
               background-color: #dddddd;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+#dialogRules {
+  .dialog-content {
+    padding: 30px 50px;
+    background: url("../images/bg-rule.png") no-repeat center/cover;
+    color: white;
+    .dialog-header {
+      position: relative;
+      width: 100%;
+      display: block;
+      .title-rules {
+        font-size: 25px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      .sub-title-rules {
+        font-size: 45px;
+        padding-bottom: 15px;
+        font-weight: 400;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px;
+      }
+      .content-rules{
+        font-size: 12px;
+        color: white;
+        margin-bottom: 15px;
+        font-weight: 300;
+        text-align: left;
+      }
+    }
+    .dialog-footer {
+      .btn-close-rules {
+        display: inline-block;
+        width: 180px;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        border: 1px solid #fff;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 300;
+        color: white;
+        .transition();
+        &:hover{
+          background-color: rgba(255,255,255,0.2);
         }
       }
     }

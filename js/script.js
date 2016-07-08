@@ -20,10 +20,12 @@ $(document).ready(function () {
 
   var dialogLogin = $('#loginWithFacebook');
   $('.open').click(function (e) {
+    dialogRules.removeClass('dialog-open');
+    dialogRules.addClass('dialog-close');
     dialogLogin.removeClass('dialog-close');
     dialogLogin.addClass('dialog-open');
   });
-  $('.btn-login-with-facebook, .close-dialog-login, .dialog-overlay').click(function (e) {
+  $('.close-dialog-login, .dialog-overlay').click(function (e) {
     dialogLogin.removeClass('dialog-open');
     dialogLogin.addClass('dialog-close');
   });
@@ -36,6 +38,16 @@ $(document).ready(function () {
   $('.close-dialog-gallery').click(function (e) {
     dialogGallery.removeClass('dialog-open');
     dialogGallery.addClass('dialog-close');
+  });
+
+  var dialogRules = $('#dialogRules');
+  $('.show-the-rule').click(function (e) {
+    dialogRules.removeClass('dialog-close');
+    dialogRules.addClass('dialog-open');
+  });
+  $('.close-dialog-rules, .dialog-overlay').click(function (e) {
+    dialogRules.removeClass('dialog-open');
+    dialogRules.addClass('dialog-close');
   });
 
   var showQuestion = $('.block-image');

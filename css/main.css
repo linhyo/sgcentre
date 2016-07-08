@@ -1215,6 +1215,54 @@ p {
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery:hover {
   background-color: #dddddd;
 }
+#dialogRules .dialog-content {
+  padding: 30px 50px;
+  background: url("../images/bg-rule.png") no-repeat center / cover;
+  color: white;
+}
+#dialogRules .dialog-content .dialog-header {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+#dialogRules .dialog-content .dialog-header .title-rules {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#dialogRules .dialog-content .dialog-header .sub-title-rules {
+  font-size: 45px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+#dialogRules .dialog-content .dialog-header .content-rules {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 300;
+  text-align: left;
+}
+#dialogRules .dialog-content .dialog-footer .btn-close-rules {
+  display: inline-block;
+  width: 180px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#dialogRules .dialog-content .dialog-footer .btn-close-rules:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 .frame1 {
   padding: 0 0 120px 85px;
   /* Reset the white-space so content wraps as expected */
