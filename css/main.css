@@ -1279,6 +1279,11 @@ p {
   font-weight: 300;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
+@media (max-width: 360px) {
+  .frame1 .title-frame1 {
+    color: #5c5c5c;
+  }
+}
 .frame1 .sub-title-frame1 {
   font-size: 44px;
   color: white;
@@ -1288,6 +1293,11 @@ p {
   padding-bottom: 15px;
   position: relative;
   margin-bottom: 15px;
+}
+@media (max-width: 360px) {
+  .frame1 .sub-title-frame1 {
+    color: #5c5c5c;
+  }
 }
 .frame1 .sub-title-frame1:after {
   height: 3px;
@@ -1719,15 +1729,15 @@ p {
 .frame3 #question .content-block .wrapper-block .question-block .question-title,
 .frame3 #reward .content-block .wrapper-block .question-block .question-title,
 .frame3 #lost .content-block .wrapper-block .question-block .question-title {
-  font-size: 25px;
+  font-size: 20px;
   color: #404040;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 0 15px;
 }
 .frame3 #question .content-block .wrapper-block .question-block .question-description,
 .frame3 #reward .content-block .wrapper-block .question-block .question-description,
 .frame3 #lost .content-block .wrapper-block .question-block .question-description {
-  font-size: 18px;
+  font-size: 14px;
   padding: 0 15px;
   color: #404040;
   font-weight: 300;
