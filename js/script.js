@@ -14,8 +14,20 @@ $(document).ready(function () {
     }
   );
   wow.init();
+
   $('.content-group3').slimScroll({
     height: '150px'
+  });
+
+  $('.content-group3-mobile').slimScroll({
+    height: '250px'
+  });
+
+  $('.event-mobile').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
   });
 
   var dialogLogin = $('#loginWithFacebook');

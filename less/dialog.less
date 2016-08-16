@@ -48,6 +48,7 @@
   -webkit-justify-content: center;
   justify-content: center;
   pointer-events: none;
+  z-index: 999;
 }
 
 .dialog-overlay {
@@ -74,7 +75,10 @@
   position: relative;
   z-index: 100;
   opacity: 0;
-  box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.6)
+  box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.6);
+  @media (max-width: 640px) {
+    width: 90%;
+  }
 }
 
 .dialog-open .dialog-content {
@@ -536,6 +540,9 @@
     padding: 30px 60px;
     background-color: #00b1b7;
     color: white;
+    @media (max-width: 640px) {
+      padding: 15px 20px;
+    }
     .dialog-header {
       padding-top: 80px;
       position: relative;
@@ -557,6 +564,9 @@
           background-color: white;
           left: 60px;
           top: 30px;
+          @media (max-width: 640px) {
+            width: 100px;
+          }
         }
         &:before {
           content: '';
@@ -566,12 +576,19 @@
           background-color: white;
           right: 60px;
           top: 30px;
+          @media (max-width: 640px) {
+            width: 100px;
+          }
         }
       }
       .title-login {
         font-size: 25px;
         margin-bottom: 30px;
         font-weight: 400;
+        @media (max-width: 640px) {
+          margin-bottom: 10px;
+          font-size: 15px;
+        }
       }
       .icon-facebook-dialog {
         background: url("../images/icon-facebook-dialog.png") no-repeat center;
@@ -579,6 +596,9 @@
         height: 184px;
         margin: 0 auto 25px;
         display: block;
+        @media (max-width: 640px) {
+          margin: 0 auto 15px;
+        }
       }
       .btn-login-with-facebook {
         color: white;
@@ -588,6 +608,10 @@
         line-height: 35px;
         padding: 8px 10px 6px;
         position: relative;
+        @media (max-width: 640px) {
+          margin-bottom: 10px;
+          font-size: 15px;
+        }
         &:after {
           position: absolute;
           bottom: 0;

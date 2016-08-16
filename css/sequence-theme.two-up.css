@@ -24,9 +24,9 @@ body {
 
 .seq {
   /* Dimensions */
-  width: 100%;
+  width: 100vw;
   max-width: 100%;
-  height: 100%;
+  height: 100vh;
   /* Hide anything that goes beyond the boundaries of the Sequence container */
   overflow: hidden;
   /* Center the Sequence container on the page */
@@ -41,7 +41,13 @@ body {
     /* Reset the canvas and steps for more browser consistency */
     margin: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    display: block; }
+    @media (max-width: 768px) {
+      .seq .seq-screen,
+      .seq .seq-canvas,
+      .seq .seq-canvas > * {
+        display: none; } }
   .seq .seq-canvas {
     /* Make the steps inline */
     white-space: nowrap;
@@ -78,6 +84,9 @@ body {
     /* When JS is enabled */ }
     .seq.seq-active .seq-nav {
       display: block; }
+      @media (max-width: 768px) {
+        .seq.seq-active .seq-nav {
+          display: none; } }
     .seq.seq-active .seq-in {
       /* Now JS is enabled, remove the z-index from the nominated step */
       z-index: auto; }
@@ -341,7 +350,7 @@ body {
   .seq .seq-feature > div {
     width: 100%;
     height: 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover; }
     .seq .seq-feature > div img {
