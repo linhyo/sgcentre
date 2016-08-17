@@ -2758,9 +2758,26 @@ p {
   transform: translate(0, 0);
   left: 0;
   top: 0;
-  text-align: center;
   width: 100%;
   height: 100%;
+}
+.mobile-block .block-3 .block-content .btn-back {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+.mobile-block .block-3 .block-content .btn-back span {
+  font-weight: 600;
+  font-size: 10px;
+  color: #404040;
+}
+.mobile-block .block-3 .block-content .btn-back i.icon-back {
+  background: url("../images/icon-back.png") no-repeat center center / contain;
+  width: 25px;
+  height: 15px;
+  position: absolute;
+  top: -15px;
 }
 .mobile-block .block-3 .block-content .step-mobile-1 {
   width: 100%;
@@ -2862,6 +2879,273 @@ p {
   padding-bottom: 10px;
   position: relative;
   font-weight: 300;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url("../images/mobile/state3-mobile-step2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .question-title {
+  font-size: 15px;
+  color: #404040;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .question-description {
+  font-size: 12px;
+  padding: 0 10px;
+  color: #404040;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0 10px;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block .image-block {
+  text-align: center;
+  margin: 0 auto;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio {
+  margin: 0 0 0.75em 0;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] {
+  display: none;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label {
+  color: #484848;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #484848;
+  margin: -1px 20px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: relative;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label span > i {
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  display: block;
+  vertical-align: middle;
+  line-height: 15px;
+  font-style: normal;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label span {
+  background-color: #ffffff;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label span > i {
+  color: #484848;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"]:checked + label {
+  font-weight: 600;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"]:checked + label span {
+  background-color: #484848;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"]:checked + label span > i {
+  color: #ffffff;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label span,
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile .form-group .btn-submit {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border: 1px solid #2c2c2c;
+  background-color: transparent;
+  font-weight: 600;
+  color: #2c2c2c;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-top: 0;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile .form-group .btn-submit:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile .form-group .note-form {
+  color: #2c2c2c;
+  font-size: 12px;
+  display: block;
+}
+.mobile-block .block-3 .block-content .step-mobile-success {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url("../images/mobile/state3-mobile-stepSuccess.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .image-block {
+  text-align: center;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-block {
+  width: 100%;
+  padding: 0 15px;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-block .reward-title {
+  font-size: 14px;
+  color: #404040;
+  margin-bottom: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-block .reward-description {
+  font-size: 12px;
+  color: #404040;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-block .reward-description a {
+  text-decoration: underline;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-action {
+  display: inline-block;
+  width: 100%;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-action .btn-reward,
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-action .btn-lost {
+  padding: 6px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  background-color: #00b1b7;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-action .btn-reward.view-gallery,
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-action .btn-lost.view-gallery {
+  margin-right: 10px;
+}
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-action .btn-reward:hover,
+.mobile-block .block-3 .block-content .step-mobile-success .success-block .reward-action .btn-lost:hover {
+  background-color: #00c5cc;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url("../images/mobile/state3-mobile-stepLost.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .image-block {
+  text-align: center;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-block {
+  width: 100%;
+  padding: 0 15px;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-block .lost-title {
+  font-size: 12px;
+  color: #404040;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-block .lost-description {
+  font-size: 14px;
+  color: #404040;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-block .lost-description a {
+  text-decoration: underline;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action {
+  display: inline-block;
+  width: 100%;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-reward,
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-lost {
+  padding: 6px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  background-color: #00b1b7;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-reward.view-gallery,
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-lost.view-gallery {
+  margin-right: 10px;
+}
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-reward:hover,
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-lost:hover {
+  background-color: #00c5cc;
 }
 .mobile-block .block-4 {
   background-image: url("../images/mobile/state4-bg.png");

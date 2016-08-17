@@ -108,4 +108,18 @@ $(document).ready(function () {
       $(this).parents('.frame3').find('#lost').show();
     }
   });
+
+  $("form#question-data-mobile").submit(function (event) {
+    event.preventDefault();
+    answerByUser = true;
+    if ($("input[name=optionsRadios-mobile]:checked").val() === "A") {
+      result = 'reward';
+      $(this).parents('.frame3').find('#question').hide();
+      $(this).parents('.frame3').find('#reward').show();
+    } else {
+      result = 'lost';
+      $(this).parents('.frame3').find('#question').hide();
+      $(this).parents('.frame3').find('#lost').show();
+    }
+  });
 });
