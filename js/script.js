@@ -57,6 +57,16 @@ $(document).ready(function () {
     dialogGallery.addClass('dialog-close');
   });
 
+  var dialogGalleryMobile = $('#dialogGalleryMobile');
+  $('.view-gallery-mobile').click(function (e) {
+    dialogGalleryMobile.removeClass('dialog-close');
+    dialogGalleryMobile.addClass('dialog-open');
+  });
+  $('.close-dialog-gallery-mobile').click(function (e) {
+    dialogGalleryMobile.removeClass('dialog-open');
+    dialogGalleryMobile.addClass('dialog-close');
+  });
+
   var dialogRules = $('#dialogRules');
   $('.show-the-rule').click(function (e) {
     dialogRules.removeClass('dialog-close');
@@ -103,7 +113,6 @@ $(document).ready(function () {
     $(this).find('.isOver').parents('body').find('#dialogGallery').removeClass('dialog-close').addClass('dialog-open');
   });
 
-
   goBack.click(function (e) {
     e.preventDefault();
     $(this).parents('.frame3').find('#sub-block').hide();
@@ -124,17 +133,49 @@ $(document).ready(function () {
     }
   });
 
+  var showQuestionMobile = $('.event-block');
+  var goBackMobile = $('.btn-back-mobile');
+  var answerByUserMobile = false;
+  var resultMobile = '';
+
+  showQuestionMobile.click(function (e) {
+    e.preventDefault();
+    if(!answerByUserMobile){
+      $(this).find('.isOpenMobile').parents('.block-3').find('.step-mobile-1').hide();
+      $(this).parents('.block-3').find('.step-mobile-2').show();
+    }else{
+      if(resultMobile === 'reward'){
+        $(this).find('.isOpenMobile').parents('.block-3').find('.step-mobile-1').hide();
+        $(this).parents('.block-3').find('.step-mobile-success').show();
+      }else{
+        $(this).find('.isOpenMobile').parents('.block-3').find('.step-mobile-1').hide();
+        $(this).parents('.block-3').find('.step-mobile-lost').show();
+      }
+    }
+  });
+
+  showQuestionMobile.click(function (e) {
+    e.preventDefault();
+    $(this).find('.isCloseMobile').parents('body').find('#dialogGalleryMobile').removeClass('dialog-close').addClass('dialog-open');
+  });
+
+  goBackMobile.click(function (e) {
+    e.preventDefault();
+    $(this).parents('.block-3').find('.step-mobile-2').hide();
+    $(this).parents('.block-3').find('.step-mobile-1').show();
+  });
+
   $("form#question-data-mobile").submit(function (event) {
     event.preventDefault();
-    answerByUser = true;
+    answerByUserMobile = true;
     if ($("input[name=optionsRadios-mobile]:checked").val() === "A") {
-      result = 'reward';
-      $(this).parents('.frame3').find('#question').hide();
-      $(this).parents('.frame3').find('#reward').show();
+      resultMobile = 'reward';
+      $(this).parents('.block-3').find('.step-mobile-2').hide();
+      $(this).parents('.block-3').find('.step-mobile-success').show();
     } else {
-      result = 'lost';
-      $(this).parents('.frame3').find('#question').hide();
-      $(this).parents('.frame3').find('#lost').show();
+      resultMobile = 'lost';
+      $(this).parents('.block-3').find('.step-mobile-2').hide();
+      $(this).parents('.block-3').find('.step-mobile-lost').show();
     }
   });
 });

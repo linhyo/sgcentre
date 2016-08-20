@@ -1315,6 +1315,124 @@ p {
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery:hover {
   background-color: #dddddd;
 }
+#dialogGalleryMobile .dialog-content {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+}
+#dialogGalleryMobile .dialog-content .gallery-background {
+  z-index: 101;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 5%);
+  -moz-transform: translate(-50%, 5%);
+  -o-transform: translate(-50%, 5%);
+  -ms-transform: translate(-50%, 5%);
+  transform: translate(-50%, 5%);
+  width: 95%;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery i.icon-gallery {
+  background: url("../images/mobile/icon-collection-mobile.png") no-repeat center;
+  width: 16px;
+  height: 18px;
+  left: 50%;
+  margin-left: -13px;
+  top: 0;
+  position: absolute;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery i.icon-gallery:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: white;
+  left: 45px;
+  top: 15px;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery i.icon-gallery:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: white;
+  right: 45px;
+  top: 15px;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .title-gallery {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 15px;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery {
+  margin-top: 15px;
+  display: block;
+  padding: 10px 10px;
+  border-top: 1px solid #aaf0f3;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .title-total-gallery {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .result {
+  width: 240px;
+  margin: 0 auto;
+  padding: 0 0 0 160px;
+  position: relative;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .result span {
+  line-height: 75px;
+  font-weight: 300;
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  left: 0;
+  top: 0;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery {
+  background-color: white;
+  color: #0091a6;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 30px;
+  height: 30px;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery.close-dialog-gallery {
+  margin-left: 20px;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery:hover {
+  background-color: #dddddd;
+}
 #dialogRules .dialog-content,
 #dialogRules-mobile .dialog-content {
   padding: 30px 50px;
@@ -2801,18 +2919,18 @@ p {
   width: 100%;
   height: 100%;
 }
-.mobile-block .block-3 .block-content .btn-back {
+.mobile-block .block-3 .block-content .btn-back-mobile {
   position: relative;
   width: 100%;
   text-align: center;
   margin-top: 5px;
 }
-.mobile-block .block-3 .block-content .btn-back span {
+.mobile-block .block-3 .block-content .btn-back-mobile span {
   font-weight: 600;
   font-size: 10px;
   color: #404040;
 }
-.mobile-block .block-3 .block-content .btn-back i.icon-back {
+.mobile-block .block-3 .block-content .btn-back-mobile i.icon-back {
   background: url("../images/icon-back.png") no-repeat center center / contain;
   width: 25px;
   height: 15px;
