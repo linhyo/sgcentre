@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  smoothScroll.init();
   var wow = new WOW(
     {
       boxClass: 'wow',      // animated element css class (default is wow)
@@ -21,6 +22,10 @@ $(document).ready(function () {
 
   $('.content-group3-mobile').slimScroll({
     height: '250px'
+  });
+
+  $('.dialog-mobile-scoll').slimScroll({
+    height: '450px'
   });
 
   $('.event-mobile').slick({
@@ -60,6 +65,16 @@ $(document).ready(function () {
   $('.close-dialog-rules, .dialog-overlay').click(function (e) {
     dialogRules.removeClass('dialog-open');
     dialogRules.addClass('dialog-close');
+  });
+
+  var dialogRulesMobile = $('#dialogRules-mobile');
+  $('.show-the-rule-mobile').click(function (e) {
+    dialogRulesMobile.removeClass('dialog-close');
+    dialogRulesMobile.addClass('dialog-open');
+  });
+  $('.close-dialog-rules-mobile, .dialog-overlay').click(function (e) {
+    dialogRulesMobile.removeClass('dialog-open');
+    dialogRulesMobile.addClass('dialog-close');
   });
 
   var showQuestion = $('.block-image');

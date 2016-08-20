@@ -748,11 +748,14 @@
   }
 }
 
-#dialogRules {
+#dialogRules, #dialogRules-mobile {
   .dialog-content {
     padding: 30px 50px;
     background: url("../images/bg-rule.png") no-repeat center/cover;
     color: white;
+    @media (max-width: 768px) {
+      padding: 15px;
+    }
     .dialog-header {
       position: relative;
       width: 100%;
@@ -761,6 +764,9 @@
         font-size: 25px;
         font-weight: 300;
         text-transform: uppercase;
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
       }
       .sub-title-rules {
         font-size: 45px;
@@ -768,6 +774,11 @@
         font-weight: 400;
         border-bottom: 1px solid #fff;
         margin-bottom: 20px;
+        @media (max-width: 768px) {
+          font-size: 18px;
+          padding-bottom: 5px;
+          margin-bottom: 10px;
+        }
       }
       .content-rules{
         font-size: 12px;
@@ -775,6 +786,9 @@
         margin-bottom: 15px;
         font-weight: 300;
         text-align: left;
+        @media (max-width: 768px) {
+          margin-bottom: 10px;
+        }
       }
     }
     .dialog-footer {
@@ -791,6 +805,10 @@
         .transition();
         &:hover{
           background-color: rgba(255,255,255,0.2);
+        }
+        @media (max-width: 768px) {
+          width: auto;
+          font-size: 14px;
         }
       }
     }

@@ -449,7 +449,7 @@
   </div>
 
   <div class="mobile-block">
-    <div class="block-1">
+    <div class="block-1" id="block-1-mobile">
       <div class="block-content">
         <h2 class="title-frame1">Khám phá</h2>
 
@@ -457,9 +457,10 @@
 
         <h3 class="description-frame1">Qua từng mảnh ghép <br/> trong 28 ngày bất ngờ</h3>
 
-        <a class="view-gallery-btn seq-next" href="#">Sưu tập mảnh ghép</a>
+        <a class="view-gallery-btn" data-scroll href="#block-2-mobile">Sưu tập
+          mảnh ghép</a>
       </div>
-      <a href="#" class="btn-mobile-next">
+      <a data-scroll href="#block-2-mobile" class="btn-mobile-next">
         <div class="mouse_scroll">
           <div class="mouse">
             <div class="wheel"></div>
@@ -470,7 +471,7 @@
         </div>
       </a>
     </div>
-    <div class="block-2">
+    <div class="block-2" id="block-2-mobile">
       <div class="block-content">
         <h2 class="title-frame2">Sưu tập mảnh ghép</h2>
 
@@ -480,8 +481,8 @@
         </div>
 
         <ul class="frame2-group">
-          <li><a class="btn-frame2 text-left" href="#">28 ngày bất ngờ</a></li>
-          <li><a class="btn-frame2 text-right" href="#">The crazy race</a></li>
+          <li><a class="btn-frame2 text-left" data-scroll href="#block-3-mobile">28 ngày bất ngờ</a></li>
+          <li><a class="btn-frame2 text-right" data-scroll href="#block-4-mobile">The crazy race</a></li>
         </ul>
 
         <div class="panel-group" role="tablist" aria-multiselectable="true" id="group-description-mobile">
@@ -611,9 +612,9 @@
         </div>
       </div>
     </div>
-    <div class="block-3">
+    <div class="block-3" id="block-3-mobile">
       <div class="block-content">
-        <div style="display: none" class="step-mobile-1">
+        <div style="display: block" class="step-mobile-1">
           <div class="event-mobile">
             <div><a class="event-block" href="#"><img src="images/mobile/event-mobile1.png" alt=""/></a></div>
             <div><a class="event-block" href="#"><img src="images/mobile/event-mobile1.png" alt=""/></a></div>
@@ -641,6 +642,7 @@
               Đây là tuần lễ khai trương của một thương hiệu lần đầu tiên có mặt tại Việt Nam. <br/>
               Đây cũng là một thương hiệu nổi tiếng của Nhật theo mô hình Department Store.
             </p>
+
             <div class="wrapper-block">
               <div class="row">
                 <div class="col-xs-6" style="padding-right: 0">
@@ -723,41 +725,35 @@
             </div>
           </div>
         </div>
-        <div style="display: block" class="step-mobile-lost">
+        <div style="display: none" class="step-mobile-lost">
           <div class="lost-main-block">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="content-block">
-                  <div class="wrapper-block">
-                    <div class="image-block">
-                      <img src="images/mobile/event-mobile-result-lost.png" alt="Image 1"/>
-                    </div>
-                  </div>
+            <div class="content-block">
+              <div class="wrapper-block">
+                <div class="image-block">
+                  <img src="images/mobile/event-mobile-result-lost.png" alt="Image 1"/>
                 </div>
               </div>
-              <div class="col-xs-12">
-                <div class="content-block">
-                  <div class="wrapper-block">
-                    <div class="lost-block">
-                      <h2 class="lost-title">Rất tiếc bạn đã chọn câu trả lời sai!</h2>
+            </div>
+            <div class="content-block">
+              <div class="wrapper-block">
+                <div class="lost-block">
+                  <h2 class="lost-title">Rất tiếc bạn đã chọn câu trả lời sai!</h2>
 
-                      <h3 class="result-lost">
-                        Câu trả lời đúng là B
-                      </h3>
+                  <h3 class="result-lost">
+                    Câu trả lời đúng là B
+                  </h3>
 
-                      <p class="lost-description">
+                  <p class="lost-description">
 
-                        <i>Đừng quên quay vào ngày mai để giải mã câu hỏi tiếp theo và xem kết quả nhận quà bất ngờ
-                          của
-                          ngày hôm nay không nhé? <br/>
-                          Thu thập thêm 10 mảnh để có cơ hội tham gia <a href="#">'THE CRAZY RACE'</a></i>
-                      </p>
+                    <i>Đừng quên quay vào ngày mai để giải mã câu hỏi tiếp theo và xem kết quả nhận quà bất ngờ
+                      của
+                      ngày hôm nay không nhé? <br/>
+                      Thu thập thêm 10 mảnh để có cơ hội tham gia <a href="#">'THE CRAZY RACE'</a></i>
+                  </p>
 
-                      <div class="lost-action">
-                        <a href="#" class="view-gallery btn-lost">Xem bộ sưu tập</a>
-                        <a href="#" class="share-facebook btn-lost">Chia sẻ facebook</a>
-                      </div>
-                    </div>
+                  <div class="lost-action">
+                    <a href="#" class="view-gallery btn-lost">Xem bộ sưu tập</a>
+                    <a href="#" class="share-facebook btn-lost">Chia sẻ facebook</a>
                   </div>
                 </div>
               </div>
@@ -766,7 +762,7 @@
         </div>
       </div>
     </div>
-    <div class="block-4">
+    <div class="block-4" id="block-4-mobile">
       <div class="block-content">
         <h2 class="title-frame4">The Crazy Race</h2>
 
@@ -775,9 +771,9 @@
           trung tâm thương maik Saigon Center vào ngày 14/8/2016 cùng với 1 người bạn của mình. Nhiều thử thách bất
           ngờ cùng các phần quà hấp dẫn chờ đón các bạn!</p>
 
-        <a class="btn-frame4 seq-prev " href="#">Sưu tập mảnh ghép</a>
+        <a class="btn-frame4 seq-prev " data-scroll href="#block-2-mobile">Sưu tập mảnh ghép</a>
 
-        <a class="btn-frame4 show-the-rule" href="#">Nội dung chương trình</a>
+        <a class="btn-frame4 show-the-rule-mobile" href="#">Nội dung chương trình</a>
       </div>
     </div>
   </div>
@@ -904,7 +900,62 @@
   </div>
 </div>
 
+<div id="dialogRules-mobile" class="dialog">
+  <div class="dialog-overlay"></div>
+  <div class="dialog-content">
+    <div class="dialog-mobile-scoll">
+      <div class="dialog-header">
+        <h2 class="title-rules">Thể lệ chương trình</h2>
+
+        <h2 class="sub-title-rules">'The Crazy Race'</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <p class="content-rules">
+              But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born
+              and I will give you a complete account of the system, and expound the actual teachings of the great explorer
+              of the truth, the master-builder of human happiness.
+              <br/>
+              <br/>
+              On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+              demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
+              and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through
+              weakness of will, which is the same as saying through shrinking from toil and pain. These cases are
+              perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammeled and when
+              nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain
+              avoided.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="content-rules">
+              Nor again is there anyone who loves or pursues or desires to obtain
+              pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure
+              him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
+              except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy
+              a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+              <br/>
+              <br/>
+              On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+              demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
+              and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through
+              weakness of will, which is the same as saying through shrinking from toil and pain. These cases are
+              perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammeled and when
+              nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain
+              avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will
+              frequently occur that pleasures have to be repudiated and annoyances accepted.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <a href="#" class="close-dialog-rules-mobile btn-close-rules">Đóng</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript" src="js/lib/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/lib/smooth-scroll.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery-migrate-1.2.1.min.js"></script>
@@ -915,8 +966,10 @@
 <script type="text/javascript" src="js/lib/hammer.min.js"></script>
 <script type="text/javascript" src="js/lib/sequence.min.js"></script>
 <script type="text/javascript" src="js/lib/sequence-theme.two-up.min.js"></script>
+
 <script type="text/javascript" src="js/countdown.js"></script>
 <script type="text/javascript" src="js/carousel.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>

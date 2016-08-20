@@ -1315,36 +1315,68 @@ p {
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery:hover {
   background-color: #dddddd;
 }
-#dialogRules .dialog-content {
+#dialogRules .dialog-content,
+#dialogRules-mobile .dialog-content {
   padding: 30px 50px;
   background: url("../images/bg-rule.png") no-repeat center / cover;
   color: white;
 }
-#dialogRules .dialog-content .dialog-header {
+@media (max-width: 768px) {
+  #dialogRules .dialog-content,
+  #dialogRules-mobile .dialog-content {
+    padding: 15px;
+  }
+}
+#dialogRules .dialog-content .dialog-header,
+#dialogRules-mobile .dialog-content .dialog-header {
   position: relative;
   width: 100%;
   display: block;
 }
-#dialogRules .dialog-content .dialog-header .title-rules {
+#dialogRules .dialog-content .dialog-header .title-rules,
+#dialogRules-mobile .dialog-content .dialog-header .title-rules {
   font-size: 25px;
   font-weight: 300;
   text-transform: uppercase;
 }
-#dialogRules .dialog-content .dialog-header .sub-title-rules {
+@media (max-width: 768px) {
+  #dialogRules .dialog-content .dialog-header .title-rules,
+  #dialogRules-mobile .dialog-content .dialog-header .title-rules {
+    font-size: 15px;
+  }
+}
+#dialogRules .dialog-content .dialog-header .sub-title-rules,
+#dialogRules-mobile .dialog-content .dialog-header .sub-title-rules {
   font-size: 45px;
   padding-bottom: 15px;
   font-weight: 400;
   border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
-#dialogRules .dialog-content .dialog-header .content-rules {
+@media (max-width: 768px) {
+  #dialogRules .dialog-content .dialog-header .sub-title-rules,
+  #dialogRules-mobile .dialog-content .dialog-header .sub-title-rules {
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+}
+#dialogRules .dialog-content .dialog-header .content-rules,
+#dialogRules-mobile .dialog-content .dialog-header .content-rules {
   font-size: 12px;
   color: white;
   margin-bottom: 15px;
   font-weight: 300;
   text-align: left;
 }
-#dialogRules .dialog-content .dialog-footer .btn-close-rules {
+@media (max-width: 768px) {
+  #dialogRules .dialog-content .dialog-header .content-rules,
+  #dialogRules-mobile .dialog-content .dialog-header .content-rules {
+    margin-bottom: 10px;
+  }
+}
+#dialogRules .dialog-content .dialog-footer .btn-close-rules,
+#dialogRules-mobile .dialog-content .dialog-footer .btn-close-rules {
   display: inline-block;
   width: 180px;
   text-transform: uppercase;
@@ -1360,8 +1392,16 @@ p {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-#dialogRules .dialog-content .dialog-footer .btn-close-rules:hover {
+#dialogRules .dialog-content .dialog-footer .btn-close-rules:hover,
+#dialogRules-mobile .dialog-content .dialog-footer .btn-close-rules:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 768px) {
+  #dialogRules .dialog-content .dialog-footer .btn-close-rules,
+  #dialogRules-mobile .dialog-content .dialog-footer .btn-close-rules {
+    width: auto;
+    font-size: 14px;
+  }
 }
 /* Slider */
 .slick-slider {
@@ -3113,7 +3153,7 @@ p {
   text-align: center;
 }
 .mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-block .lost-description {
-  font-size: 14px;
+  font-size: 12px;
   color: #404040;
   font-weight: 300;
   margin-bottom: 20px;
