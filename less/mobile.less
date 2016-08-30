@@ -103,7 +103,7 @@
     }
   }
   .block-2 {
-    height: 150vh;
+    height: 125vh;
     background-size: 100% auto;
     background-position: top center;
     background-color: #00b1b7;
@@ -202,7 +202,7 @@
                 height: 12px;
                 .transition();
                 left: 0;
-                top: 0;
+                top: -2;
               }
               &.collapsed {
                 .panel-arrow {
@@ -243,14 +243,15 @@
                 }
                 .icon-facebook {
                   display: block;
-                  background: url("../images/icon-facebook.png") no-repeat center;
+                  background: url("../images/icon-facebook.png") no-repeat center / contain;
                   width: 37px;
                   height: 37px;
                   margin: 0 auto 5px;
                 }
                 .icon-question {
                   display: block;
-                  background: url("../images/icon-question.png") no-repeat center;
+                  background: url("../images/icon-question.png") no-repeat center / contain;
+
                   width: 37px;
                   height: 37px;
                   margin: 0 auto 5px;
@@ -293,10 +294,12 @@
       width: 100%;
       height: 100%;
       .btn-back-mobile {
-        position: relative;
+        position: absolute;
         width: 100%;
         text-align: center;
         margin-top: 5px;
+        left: 0;
+        bottom: -15px;
         span {
           font-weight: 600;
           font-size: 10px;
@@ -364,19 +367,19 @@
             &:after {
               content: '';
               height: 1px;
-              width: 90px;
+              width: 40px;
               position: absolute;
-              top: 18px;
-              left: -100px;
+              top: 13px;
+              left: -46px;
               background-color: #525252;
             }
             &:before {
               content: '';
               height: 1px;
-              width: 90px;
+              width: 40px;
               position: absolute;
-              top: 18px;
-              right: -100px;
+              top: 13px;
+              right: -46px;
               background-color: #525252;
             }
           }
@@ -390,12 +393,12 @@
             &:after {
               position: absolute;
               content: '';
-              width: 210px;
+              width: 110px;
               height: 1px;
               background-color: #525252;
               bottom: 0;
               left: 50%;
-              margin-left: -105px;
+              margin-left: -55px;
             }
           }
           .description-frame3 {
@@ -422,7 +425,7 @@
           display: block;
           position: absolute;
           left: 0;
-          bottom: 25px;
+          bottom: 90px;
           .question-title {
             font-size: 15px;
             color: #404040;
@@ -445,6 +448,10 @@
             .image-block {
               text-align: center;
               margin: 0 auto;
+              position: relative;
+              img{
+                width: 80%;
+              }
             }
             #question-data-mobile {
               @DarkBrown: #484848;
@@ -492,6 +499,9 @@
                       }
                     }
                   }
+                }
+                input[type="radio"] + label span{
+                  background-color: transparent;
                 }
                 input[type="radio"] + label span,
                 input[type="radio"]:checked + label span {
@@ -620,6 +630,9 @@
               font-weight: 700;
               text-align: center;
             }
+            .result-lost{
+              text-align: center;
+            }
             .lost-description {
               font-size: 12px;
               color: #404040;
@@ -633,6 +646,7 @@
           .lost-action {
             display: inline-block;
             width: 100%;
+            text-align: center;
             .btn-reward, .btn-lost {
               padding: 6px 15px;
               font-size: 12px;
@@ -677,10 +691,10 @@
         text-align: left;
       }
       .btn-frame4 {
-        margin-top: 10px;
-        font-size: 12px;
+        font-size: 11px;
         width: 140px;
         height: 22px;
+        margin: 10px 3px 0;
         vertical-align: middle;
         background-color: #00b1b7;
         color: white;

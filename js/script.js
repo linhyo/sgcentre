@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  smoothScroll.init();
   var wow = new WOW(
     {
       boxClass: 'wow',      // animated element css class (default is wow)

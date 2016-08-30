@@ -671,20 +671,20 @@
             &:after {
               content: '';
               position: absolute;
-              width: 200px;
+              width: 60px;
               height: 1px;
               background-color: white;
-              left: 45px;
-              top: 15px;
+              left: 25px;
+              top: 10px;
             }
             &:before {
               content: '';
               position: absolute;
-              width: 200px;
+              width: 60px;
               height: 1px;
               background-color: white;
-              right: 45px;
-              top: 15px;
+              right: 25px;
+              top: 10px;
             }
           }
           .title-gallery {
@@ -698,7 +698,17 @@
             margin-top: 15px;
             display: block;
             padding: 30px 80px;
-            border-top: 1px solid hsl(182, 75%, 81%);
+            position: relative;
+            &:after{
+              position: absolute;
+              top: 5px;
+              left: 50%;
+              content: '';
+              width: 170px;
+              margin-left: -90px;
+              background-color: hsl(182, 75%, 81%);
+              height: 1px;
+            }
             .title-total-gallery {
               color: white;
               font-size: 25px;
@@ -721,6 +731,15 @@
                 font-size: 60px;
                 left: 0;
                 top: 0;
+                @media (max-width: 480px) {
+                  line-height: 50px;
+                  font-weight: 300;
+                  position: absolute;
+                  color: white;
+                  font-size: 50px;
+                  left: 20px;
+                  top: 0;
+                }
               }
             }
           }
@@ -784,20 +803,20 @@
             &:after {
               content: '';
               position: absolute;
-              width: 100px;
+              width: 60px;
               height: 1px;
               background-color: white;
-              left: 45px;
-              top: 15px;
+              left: 25px;
+              top: 10px;
             }
             &:before {
               content: '';
               position: absolute;
-              width: 100px;
+              width: 60px;
               height: 1px;
               background-color: white;
-              right: 45px;
-              top: 15px;
+              right: 25px;
+              top: 10px;
             }
           }
           .title-gallery {
@@ -811,7 +830,17 @@
             margin-top: 15px;
             display: block;
             padding: 10px 10px;
-            border-top: 1px solid #aaf0f3;
+            position: relative;
+            &:after{
+              position: absolute;
+              top: 5px;
+              left: 50%;
+              content: '';
+              width: 170px;
+              margin-left: -90px;
+              background-color: hsl(182, 75%, 81%);
+              height: 1px;
+            }
             .title-total-gallery {
               color: white;
               font-size: 25px;
@@ -821,18 +850,18 @@
             .result {
               width: 240px;
               margin: 0 auto;
-              padding: 0 0 0 160px;
+              padding: 0 90px 0 165px;
               position: relative;
               color: white;
-              font-size: 25px;
+              font-size: 18px;
               font-weight: 300;
               span {
-                line-height: 75px;
+                line-height: 50px;
                 font-weight: 300;
                 position: absolute;
                 color: white;
-                font-size: 60px;
-                left: 0;
+                font-size: 50px;
+                left: 20px;
                 top: 0;
               }
             }
@@ -844,9 +873,10 @@
             text-transform: uppercase;
             line-height: 30px;
             height: 30px;
-            width: 120px;
+            width: 100px;
             text-align: center;
             display: inline-block;
+            margin: 0 5px;
             .transition();
             &.close-dialog-gallery {
               margin-left: 20px;

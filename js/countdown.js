@@ -2,7 +2,7 @@
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2016/07/25 00:00:00");
+var targetDate = new Date("2016/09/25 00:00:00");
 
 // Other date related variables
 var days;
@@ -59,11 +59,17 @@ function countDownTimer(){
   // Figure out the time to launch
   timeToLaunch();
 
+  var checkNumber = function(number){
+    if(number < 10){
+      return '0' + number;
+    }
+    return number;
+  };
   // Write to countdown component
-  $( "#days .number" ).text(days);
-  $( "#hours .number" ).text(hrs);
-  $( "#minutes .number" ).text(min);
-  $( "#seconds .number" ).text(sec);
+  $( "#days .number" ).text(checkNumber(days));
+  $( "#hours .number" ).text(checkNumber(hrs));
+  $( "#minutes .number" ).text(checkNumber(min));
+  $( "#seconds .number" ).text(checkNumber(sec));
 
   // Repeat the check every second
   setTimeout(countDownTimer,1000);

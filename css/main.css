@@ -1241,20 +1241,20 @@ p {
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery i.icon-gallery:after {
   content: '';
   position: absolute;
-  width: 200px;
+  width: 60px;
   height: 1px;
   background-color: white;
-  left: 45px;
-  top: 15px;
+  left: 25px;
+  top: 10px;
 }
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery i.icon-gallery:before {
   content: '';
   position: absolute;
-  width: 200px;
+  width: 60px;
   height: 1px;
   background-color: white;
-  right: 45px;
-  top: 15px;
+  right: 25px;
+  top: 10px;
 }
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .title-gallery {
   color: white;
@@ -1267,7 +1267,17 @@ p {
   margin-top: 15px;
   display: block;
   padding: 30px 80px;
-  border-top: 1px solid #aaf0f3;
+  position: relative;
+}
+#dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery:after {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  content: '';
+  width: 170px;
+  margin-left: -90px;
+  background-color: #aaf0f3;
+  height: 1px;
 }
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .title-total-gallery {
   color: white;
@@ -1292,6 +1302,17 @@ p {
   font-size: 60px;
   left: 0;
   top: 0;
+}
+@media (max-width: 480px) {
+  #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .result span {
+    line-height: 50px;
+    font-weight: 300;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    left: 20px;
+    top: 0;
+  }
 }
 #dialogGallery .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery {
   background-color: white;
@@ -1359,20 +1380,20 @@ p {
 #dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery i.icon-gallery:after {
   content: '';
   position: absolute;
-  width: 100px;
+  width: 60px;
   height: 1px;
   background-color: white;
-  left: 45px;
-  top: 15px;
+  left: 25px;
+  top: 10px;
 }
 #dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery i.icon-gallery:before {
   content: '';
   position: absolute;
-  width: 100px;
+  width: 60px;
   height: 1px;
   background-color: white;
-  right: 45px;
-  top: 15px;
+  right: 25px;
+  top: 10px;
 }
 #dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .title-gallery {
   color: white;
@@ -1385,7 +1406,17 @@ p {
   margin-top: 15px;
   display: block;
   padding: 10px 10px;
-  border-top: 1px solid #aaf0f3;
+  position: relative;
+}
+#dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery:after {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  content: '';
+  width: 170px;
+  margin-left: -90px;
+  background-color: #aaf0f3;
+  height: 1px;
 }
 #dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .title-total-gallery {
   color: white;
@@ -1396,19 +1427,19 @@ p {
 #dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .result {
   width: 240px;
   margin: 0 auto;
-  padding: 0 0 0 160px;
+  padding: 0 90px 0 165px;
   position: relative;
   color: white;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 300;
 }
 #dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .total-gallery .result span {
-  line-height: 75px;
+  line-height: 50px;
   font-weight: 300;
   position: absolute;
   color: white;
-  font-size: 60px;
-  left: 0;
+  font-size: 50px;
+  left: 20px;
   top: 0;
 }
 #dialogGalleryMobile .dialog-content .gallery-background .gallery-content .group-gallery .btn-gallery {
@@ -1418,9 +1449,10 @@ p {
   text-transform: uppercase;
   line-height: 30px;
   height: 30px;
-  width: 120px;
+  width: 100px;
   text-align: center;
   display: inline-block;
+  margin: 0 5px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -2690,7 +2722,7 @@ p {
   height: 10px;
 }
 .mobile-block .block-2 {
-  height: 150vh;
+  height: 125vh;
   background-size: 100% auto;
   background-position: top center;
   background-color: #00b1b7;
@@ -2827,7 +2859,7 @@ p {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   left: 0;
-  top: 0;
+  top: -2;
 }
 .mobile-block .block-2 .block-content .panel-group .panel .panel-title a.collapsed .panel-arrow {
   background: url("../images/mobile/arrow-mobile.png") no-repeat center;
@@ -2871,14 +2903,14 @@ p {
 }
 .mobile-block .block-2 .block-content .panel-group .panel .panel-body .content-group1 a .icon-facebook {
   display: block;
-  background: url("../images/icon-facebook.png") no-repeat center;
+  background: url("../images/icon-facebook.png") no-repeat center / contain;
   width: 37px;
   height: 37px;
   margin: 0 auto 5px;
 }
 .mobile-block .block-2 .block-content .panel-group .panel .panel-body .content-group1 a .icon-question {
   display: block;
-  background: url("../images/icon-question.png") no-repeat center;
+  background: url("../images/icon-question.png") no-repeat center / contain;
   width: 37px;
   height: 37px;
   margin: 0 auto 5px;
@@ -2920,10 +2952,12 @@ p {
   height: 100%;
 }
 .mobile-block .block-3 .block-content .btn-back-mobile {
-  position: relative;
+  position: absolute;
   width: 100%;
   text-align: center;
   margin-top: 5px;
+  left: 0;
+  bottom: -15px;
 }
 .mobile-block .block-3 .block-content .btn-back-mobile span {
   font-weight: 600;
@@ -2998,19 +3032,19 @@ p {
 .mobile-block .block-3 .block-content .step-mobile-1 .promotion-block i.icon-device:after {
   content: '';
   height: 1px;
-  width: 90px;
+  width: 40px;
   position: absolute;
-  top: 18px;
-  left: -100px;
+  top: 13px;
+  left: -46px;
   background-color: #525252;
 }
 .mobile-block .block-3 .block-content .step-mobile-1 .promotion-block i.icon-device:before {
   content: '';
   height: 1px;
-  width: 90px;
+  width: 40px;
   position: absolute;
-  top: 18px;
-  right: -100px;
+  top: 13px;
+  right: -46px;
   background-color: #525252;
 }
 .mobile-block .block-3 .block-content .step-mobile-1 .promotion-block .title-frame3 {
@@ -3024,12 +3058,12 @@ p {
 .mobile-block .block-3 .block-content .step-mobile-1 .promotion-block .title-frame3:after {
   position: absolute;
   content: '';
-  width: 210px;
+  width: 110px;
   height: 1px;
   background-color: #525252;
   bottom: 0;
   left: 50%;
-  margin-left: -105px;
+  margin-left: -55px;
 }
 .mobile-block .block-3 .block-content .step-mobile-1 .promotion-block .description-frame3 {
   font-size: 12px;
@@ -3054,7 +3088,7 @@ p {
   display: block;
   position: absolute;
   left: 0;
-  bottom: 25px;
+  bottom: 90px;
 }
 .mobile-block .block-3 .block-content .step-mobile-2 .question-block .question-title {
   font-size: 15px;
@@ -3079,6 +3113,10 @@ p {
 .mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block .image-block {
   text-align: center;
   margin: 0 auto;
+  position: relative;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block .image-block img {
+  width: 80%;
 }
 .mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio {
   margin: 0 0 0.75em 0;
@@ -3130,6 +3168,9 @@ p {
 }
 .mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"]:checked + label span > i {
   color: #ffffff;
+}
+.mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label span {
+  background-color: transparent;
 }
 .mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"] + label span,
 .mobile-block .block-3 .block-content .step-mobile-2 .question-block .wrapper-block #question-data-mobile div.radio input[type="radio"]:checked + label span {
@@ -3270,6 +3311,9 @@ p {
   font-weight: 700;
   text-align: center;
 }
+.mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-block .result-lost {
+  text-align: center;
+}
 .mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-block .lost-description {
   font-size: 12px;
   color: #404040;
@@ -3282,6 +3326,7 @@ p {
 .mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action {
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 .mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-reward,
 .mobile-block .block-3 .block-content .step-mobile-lost .lost-main-block .lost-action .btn-lost {
@@ -3337,10 +3382,10 @@ p {
   text-align: left;
 }
 .mobile-block .block-4 .block-content .btn-frame4 {
-  margin-top: 10px;
-  font-size: 12px;
+  font-size: 11px;
   width: 140px;
   height: 22px;
+  margin: 10px 3px 0;
   vertical-align: middle;
   background-color: #00b1b7;
   color: white;
